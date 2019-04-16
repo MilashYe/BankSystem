@@ -23,8 +23,8 @@ public class OpenAccountCommand implements Command {
         int userId = ((User) request.getSession().getAttribute("user")).getId();
         Account readAccount = new AccountUtil().createAccount(userId);
         request.setAttribute("account", new AccountUtil().sortDate(readAccount));
-        User user = new UserUtil().readUserById(userId);
-        request.getSession().setAttribute("user", user);
 
+        User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
+        request.getSession().setAttribute("user",user);
     }
 }

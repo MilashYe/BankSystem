@@ -19,9 +19,7 @@ public class AccountInfoCommand implements Command {
         log.info("Acount info command acId="+request.getParameter("acId"));
         int accountId = Integer.parseInt(request.getParameter("acId"));
         Account readAccount = new AccountUtil().readById(accountId);
-       /* readAccount = new AccountUtil().getApprovedCredit(readAccount);
-        readAccount = new AccountUtil().getNotEmptyDeposits(readAccount);
-        */request.setAttribute("account", new AccountUtil().sortDate(readAccount));
+        request.setAttribute("account", new AccountUtil().sortDate(readAccount));
 
     }
 }

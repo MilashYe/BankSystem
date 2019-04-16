@@ -62,4 +62,5 @@ public interface SQLQueries {
 			"set dep_money=(?), received_money=(?) " +
 			"where id_dep = (?);";
 
+    String READ_TIME_ALL = "select * from time;";
 }

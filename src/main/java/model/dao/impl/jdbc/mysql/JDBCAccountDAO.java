@@ -159,7 +159,6 @@ public class JDBCAccountDAO implements AccountDAO {
 	public void update(Account entity) {
 		try  {
 			PreparedStatement statement = connection.prepareStatement(SQLQueries.UPDATE_ACOUNT_MONEY);
-			connection.setAutoCommit(false);
 			statement.setLong(1, entity.getMoney());
 			statement.setBoolean(2,entity.isClosed());
 			statement.setInt(3, entity.getId());
@@ -167,8 +166,6 @@ public class JDBCAccountDAO implements AccountDAO {
 
 			statement.executeUpdate();
 			addTime(entity.getId(),"Account money were updated, balance is "+entity.getMoney()/100);
-
-			connection.commit();
 			statement.close();
 		} catch (SQLException e) {
 			try {
@@ -182,7 +179,7 @@ public class JDBCAccountDAO implements AccountDAO {
 	}
 
 	@Override
-	public void addTime(int accountId, String message) {
+	public void addTime(int accountId, String message) throws SQLException {
 		try(PreparedStatement statement = connection.prepareStatement(SQLQueries.CREATE_TIME)) {
 			statement.setInt(2, accountId);
 			statement.setString(1, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
@@ -225,6 +222,34 @@ public class JDBCAccountDAO implements AccountDAO {
 			log.info("Account added into stuff table acc:"+accountId+" user:"+userId);
 		} catch (SQLException e) {
 			log.info("error in addAccount" + e);
+		}
+	}
+
+	@Override
+	public void startTransaction() {
+		try {
+			connection.setAutoCommit(false);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void endTransaction() {
+		try {
+			connection.commit();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void rollbackTransactio() {
+		try {
+			connection.rollback();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 }

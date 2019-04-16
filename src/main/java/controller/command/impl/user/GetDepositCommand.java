@@ -24,10 +24,7 @@ public class GetDepositCommand implements Command {
 
         new DepositUtil().createDeposit(accountId, depositType, money, standartTerm);
 
-        User oldUser = (User) request.getSession().getAttribute("user");
-        request.getSession().
-                setAttribute("user", new UserUtil().readUserById(oldUser.getId()));
-
-
+        User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
+        request.getSession().setAttribute("user",user);
     }
 }

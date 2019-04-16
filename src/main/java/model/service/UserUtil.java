@@ -26,6 +26,13 @@ public class UserUtil {
         return user;
     }
 
+    public User updateUser(User user) {
+        try (UserDAO dao = DAOFactory.getInstance().createUserDAO()) {
+            return dao.readById(user.getId());
+        }
+
+    }
+
 
 
 }

@@ -57,8 +57,9 @@ public class Servlet extends HttpServlet {
 		commands.put("admin", new AdminMainPageCommand());
 		commands.put("admin/adminMain", new AdminMainPageCommand());
 		commands.put("admin/main", new MainPageCommand());
-		commands.put("admin/getDeposit", new GetDepositPage());
-		commands.put("admin/getCredit", new GetCreditPage());
+		commands.put("admin/addUsers", new AddUserToAccountPage());
+		commands.put("admin/statistic", new StatisticPageCommand());
+		commands.put("admin/approveCredit", new ApproveCreditPageCommand());
 
 
 

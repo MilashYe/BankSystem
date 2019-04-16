@@ -25,10 +25,7 @@ public class GetLoanCommand implements Command {
 
         new CreditUtil().createCredit(accountId, money, loanType, hypothecTerm, installmentCount);
 
-        User oldUser = (User) request.getSession().getAttribute("user");
-        request.getSession().
-                setAttribute("user", new UserUtil().readUserById(oldUser.getId()));
-
-
+        User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
+        request.getSession().setAttribute("user",user);
     }
 }

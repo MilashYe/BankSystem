@@ -2,14 +2,8 @@ package model.dao.impl.jdbc;
 
 import model.dao.ConnectionPool;
 import model.dao.DAOFactory;
-import model.dao.impl.jdbc.mysql.JDBCAccountDAO;
-import model.dao.impl.jdbc.mysql.JDBCCreditDAO;
-import model.dao.impl.jdbc.mysql.JDBCDepositDAO;
-import model.dao.impl.jdbc.mysql.JDBCUserDAO;
-import model.dao.interfaces.AccountDAO;
-import model.dao.interfaces.CreditDAO;
-import model.dao.interfaces.DepositDAO;
-import model.dao.interfaces.UserDAO;
+import model.dao.impl.jdbc.mysql.*;
+import model.dao.interfaces.*;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -37,6 +31,11 @@ public class JDBCDaoFactory extends DAOFactory {
 	@Override
 	public DepositDAO createDepositDAO() {
 		return new JDBCDepositDAO(connection());
+	}
+
+	@Override
+	public TimeDao createTimeDAO() {
+		return new JDBCTimeDao(connection());
 	}
 
 	private Connection connection() {

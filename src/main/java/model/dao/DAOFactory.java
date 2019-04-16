@@ -1,10 +1,7 @@
 package model.dao;
 
 import model.dao.impl.jdbc.JDBCDaoFactory;
-import model.dao.interfaces.AccountDAO;
-import model.dao.interfaces.CreditDAO;
-import model.dao.interfaces.DepositDAO;
-import model.dao.interfaces.UserDAO;
+import model.dao.interfaces.*;
 
 public abstract class DAOFactory {
 	private static DAOFactory daoFactory;
@@ -13,6 +10,7 @@ public abstract class DAOFactory {
 	public abstract AccountDAO createAccountDAO();
 	public abstract CreditDAO createCreditDAO();
 	public abstract DepositDAO createDepositDAO();
+	public abstract TimeDao createTimeDAO();
 
 
 	public static DAOFactory getInstance(){

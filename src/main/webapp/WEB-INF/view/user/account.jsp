@@ -103,28 +103,7 @@
             </table>
         </div>
 
-        <div class="card row">
-            <p class="card-title">Change time</p>
-            <table class="table table-hover table-30">
-                <tr>
-                    <th>Change time</th>
-                    <th>Message info</th>
 
-                </tr>
-                <c:forEach var="time" items="${account.changeTime}">
-                    <tr>
-                        <td>
-                            <fmt:formatDate value="${time.changeTime}" dateStyle="full" type="both" />
-                        </td>
-                        <td>
-                            <c:out value="${time.message}"/>
-                        </td>
-
-                    </tr>
-
-                </c:forEach>
-            </table>
-        </div>
     </div>
     <button onclick="location.href='${pageContext.request.contextPath}/bank/user/userInfo'"
             class="btn-ex btn  btn-lg btn-success btn-block text-uppercase " >

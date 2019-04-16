@@ -19,7 +19,7 @@ public class JDBCAccountDAOTest {
 
     @BeforeClass
     public static void init() {
-        testAccount.setMoney(0);
+        testAccount.setMoney(13);
         testAccount.setClosed(false);
 
     }
@@ -62,5 +62,11 @@ public class JDBCAccountDAOTest {
         readAcc.setMoney(1234);
         dao.update(readAcc);
         assertEquals(1234,dao.readById(testAccount.getId()).getMoney());
+    }
+
+    @Test
+    public void transactionTest() {
+        dao.startTransaction();
+        dao.create(testAccount);
     }
 }

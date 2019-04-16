@@ -7,12 +7,16 @@ import model.entity.ChangeTime;
 import model.entity.Credit;
 import model.entity.Deposit;
 import model.exception.NotEnoughtMoneyException;
+import org.apache.log4j.Logger;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
 public class AccountUtil {
+
+    private static final Logger log = Logger.getLogger(AccountUtil.class);
 
     public ArrayList<Account> readAccounts() {
         try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
@@ -97,19 +101,46 @@ public class AccountUtil {
     public void transferBetweenAccounts(int id1, int id2, int money) throws NotEnoughtMoneyException {
         try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
             Account account1 = dao.readById(id1);
-            Account account2 = dao.readById(id2);
+            Account account2;
+            if (id1 == id2) {
+                return;
+            } else {
+                account2 = dao.readById(id2);
+            }
             if (account1.getMoney() < money * 100) {
                 throw new NotEnoughtMoneyException("Sorry you have not enought money");
             } else {
-                account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
-                account2.setMoney(account2.getMoney() + new MoneyUtil().convertDown(money));
-                dao.addTime(id1, "Money were sent to " + account2.getId() + " account");
-                dao.addTime(id2, "Money were get from " + account1.getId() + " account");
-                dao.update(account1);
-                dao.update(account2);
-
+                try {
+                    account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
+                    account2.setMoney(account2.getMoney() + new MoneyUtil().convertDown(money));
+                    dao.startTransaction();
+                    dao.addTime(id1, "Money were sent to " + account2.getId() + " account");
+                    dao.addTime(id2, "Money were get from " + account1.getId() + " account");
+                    dao.update(account1);
+                    dao.update(account2);
+                    dao.endTransaction();
+                } catch (SQLException e) {
+                    dao.rollbackTransactio();
+                    log.info("transaction in transfer was rolled back" + e.getMessage());
+                }
             }
 
+        }
+    }
+
+    public void payBillByNumber(int id, int billNumber, int money) {
+        try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
+            Account account1 = dao.readById(id);
+            if (account1.getMoney() < new MoneyUtil().convertDown(money)) {
+                throw new NotEnoughtMoneyException("Sorry you have not enought money");
+            } else {
+                account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
+                dao.addTime(id, "Money were sent to " +billNumber + " bill");
+                dao.update(account1);
+            }
+
+        } catch (SQLException e) {
+            log.info("sql exception in pay bill" + e.getMessage());
         }
     }
 }

@@ -10,8 +10,6 @@
 <head>
     <title>Bank transfer</title>
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <script src="${pageContext.request.contextPath}/webjars/jquery/3.0.0/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -44,6 +42,15 @@
                 <input name="money" type="number" required>
             </label>
         </p>
+        <c:if test="${not empty info}">
+            <div class="alert alert-danger" role="alert">
+                <c:out value="${info}"/>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        </c:if>
         <button class="btn btn-success text-uppercase" type="submit">do transfer</button>
 
     </form>

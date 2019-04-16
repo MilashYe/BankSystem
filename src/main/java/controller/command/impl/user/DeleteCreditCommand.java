@@ -26,11 +26,10 @@ public class DeleteCreditCommand implements Command {
         /*account = new AccountUtil().getApprovedCredit(account);
         account = new AccountUtil().getNotEmptyDeposits(account);
 */
-        User oldUser = (User) request.getSession().getAttribute("user");
+
         request.setAttribute("account", new AccountUtil().sortDate(account));
-        request.getSession().
-                setAttribute("user", new UserUtil().readUserById(oldUser.getId()));
 
-
+        User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
+        request.getSession().setAttribute("user",user);
     }
 }
