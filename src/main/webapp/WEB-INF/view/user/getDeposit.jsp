@@ -15,7 +15,8 @@
 
 </head>
 <body>
-    <form name="getDepositForm" method="post" action="${pageContext.request.contextPath}/bank/user/getDeposit">
+    <jsp:include page="../include/userHeader.jsp"/>
+<form name="getDepositForm" method="post" action="${pageContext.request.contextPath}/bank/user/getDeposit">
         <p>choose deposit type</p>
 
         <label>

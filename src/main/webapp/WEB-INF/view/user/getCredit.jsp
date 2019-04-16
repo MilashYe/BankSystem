@@ -15,6 +15,7 @@
 
 </head>
 <body>
+<jsp:include page="../include/userHeader.jsp"/>
 <form name="getLoanForm" method="post" action="${pageContext.request.contextPath}/bank/user/getCredit">
     <p>choose credit type</p>
 

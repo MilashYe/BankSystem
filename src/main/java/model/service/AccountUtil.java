@@ -6,6 +6,7 @@ import model.entity.Account;
 import model.entity.ChangeTime;
 import model.entity.Credit;
 import model.entity.Deposit;
+import model.exception.NotEnoughtMoneyException;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -26,6 +27,7 @@ public class AccountUtil {
             Account account = dao.readById(id);
             account = getApprovedCredit(account);
             account = getNotEmptyDeposits(account);
+            account = sortDate(account);
             return account;
         }
 
@@ -61,9 +63,11 @@ public class AccountUtil {
     }
 
     public Account sortDate(Account account) {
-        account.getChangeTime().stream().
-                sorted(Comparator.comparing(ChangeTime::getChangeTime)).
-                collect(Collectors.toList());
+        account.setChangeTime(
+                account.getChangeTime().stream().
+                        sorted(Comparator.comparing(ChangeTime::getChangeTime)).
+                        collect(Collectors.toList()));
+
         return account;
     }
 
@@ -77,14 +81,35 @@ public class AccountUtil {
             account = dao.readById(account.getId());
             account = getNotEmptyDeposits(account);
             account = getApprovedCredit(account);
+            account = sortDate(account);
             return account;
         }
     }
 
-    public void deleteAccountById(int accId) {
+    public void setClosedAccountById(int accId) {
         try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
             Account account = dao.readById(accId);
-            dao.delete(account);
+            account.setClosed(true);
+            dao.update(account);
+        }
+    }
+
+    public void transferBetweenAccounts(int id1, int id2, int money) throws NotEnoughtMoneyException {
+        try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
+            Account account1 = dao.readById(id1);
+            Account account2 = dao.readById(id2);
+            if (account1.getMoney() < money * 100) {
+                throw new NotEnoughtMoneyException("Sorry you have not enought money");
+            } else {
+                account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
+                account2.setMoney(account2.getMoney() + new MoneyUtil().convertDown(money));
+                dao.addTime(id1, "Money were sent to " + account2.getId() + " account");
+                dao.addTime(id2, "Money were get from " + account1.getId() + " account");
+                dao.update(account1);
+                dao.update(account2);
+
+            }
+
         }
     }
 }

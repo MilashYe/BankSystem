@@ -10,6 +10,6 @@
     <title>Pay bills</title>
 </head>
 <body>
-
+    <jsp:include page="../include/userHeader.jsp"/>
 </body>
 </html>

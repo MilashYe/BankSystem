@@ -49,4 +49,20 @@ public class CreditUtil {
             dao.create(credit);
         }
     }
+
+    public void approvedCredit(int id) {
+        try (CreditDAO dao = DAOFactory.getInstance().createCreditDAO()) {
+            Credit credit = dao.readById(id);
+            credit.setApproved(true);
+            dao.createTime(credit.getAccount(), "Credit " + credit.getIdCred() + " was approved");
+        }
+    }
+    public void rejectCredit(int id) {
+        try (CreditDAO dao = DAOFactory.getInstance().createCreditDAO()) {
+            Credit credit = dao.readById(id);
+            credit.setRejected(true);
+            credit.setApproved(false);
+            dao.createTime(credit.getAccount(), "Credit " + credit.getIdCred() + " was rejected");
+        }
+    }
 }

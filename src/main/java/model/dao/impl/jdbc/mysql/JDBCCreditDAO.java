@@ -82,7 +82,7 @@ public class JDBCCreditDAO implements CreditDAO {
 			statement.setBoolean(3, entity.isApproved());
 			statement.setBoolean(4, entity.isRejected());
 			statement.setInt(5, entity.getIdCred());
-			createTime(entity.getAccount(),"Credit "+entity.getIdCred()+" was updated");
+			/*createTime(entity.getAccount(),"Credit "+entity.getIdCred()+" was updated");*/
 			statement.executeUpdate();
 			connection.commit();
 			log.info("Credit succesfully updated");
@@ -107,8 +107,8 @@ public class JDBCCreditDAO implements CreditDAO {
 			e.printStackTrace();
 		}
 	}
-
-	private void createTime(int accId,String mess) {
+	@Override
+	public void createTime(int accId, String mess) {
 		try (PreparedStatement st1 = connection.prepareStatement(SQLQueries.CREATE_TIME)) {
 			st1.setString(1, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
 			st1.setInt(2,accId);

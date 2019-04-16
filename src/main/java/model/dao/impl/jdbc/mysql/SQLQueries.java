@@ -40,7 +40,7 @@ public interface SQLQueries {
 			"left join time on account.id_ac = time.account_id_ac " +
 			"where account.id_ac = (?)";
 	String UPDATE_ACOUNT_MONEY = "update account " +
-			"set ac_money = (?) " +
+			"set ac_money = (?), closed=(?) " +
 			"where id_ac = (?);";
 	String DELETE_ACCOUNT = "delete from account where id_ac = (?)";
 

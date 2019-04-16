@@ -161,16 +161,13 @@ public class JDBCAccountDAO implements AccountDAO {
 			PreparedStatement statement = connection.prepareStatement(SQLQueries.UPDATE_ACOUNT_MONEY);
 			connection.setAutoCommit(false);
 			statement.setLong(1, entity.getMoney());
-			statement.setInt(2, entity.getId());
-			statement.executeUpdate();
-
-			statement = connection.prepareStatement(SQLQueries.CREATE_TIME);
-			statement.setInt(2, entity.getId());
-			statement.setString(1, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
-			statement.setString(3, "Account money were updated, balance is "+entity.getMoney());
+			statement.setBoolean(2,entity.isClosed());
+			statement.setInt(3, entity.getId());
 
 
 			statement.executeUpdate();
+			addTime(entity.getId(),"Account money were updated, balance is "+entity.getMoney()/100);
+
 			connection.commit();
 			statement.close();
 		} catch (SQLException e) {
@@ -180,6 +177,20 @@ public class JDBCAccountDAO implements AccountDAO {
 			} catch (SQLException ex) {
 				ex.printStackTrace();
 			}
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void addTime(int accountId, String message) {
+		try(PreparedStatement statement = connection.prepareStatement(SQLQueries.CREATE_TIME)) {
+			statement.setInt(2, accountId);
+			statement.setString(1, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+			statement.setString(3, message);
+
+			statement.executeUpdate();
+
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
