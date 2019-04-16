@@ -1,0 +1,1140 @@
+2019-04-16 11:45:47 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 11:45:51 INFO  Servlet:75 - path:userInfo
+2019-04-16 11:45:51 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 11:47:21 INFO  Servlet:75 - path:privateAccount
+2019-04-16 11:47:21 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 11:47:21 INFO  UserFilter:29 - role = user
+2019-04-16 11:47:21 INFO  Servlet:75 - path:user
+2019-04-16 11:47:21 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 11:47:22 INFO  UserFilter:29 - role = user
+2019-04-16 11:47:22 INFO  Servlet:75 - path:user/transferPage
+2019-04-16 11:47:22 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 11:53:35 INFO  Servlet:75 - path:credits
+2019-04-16 11:53:35 INFO  Servlet:85 - forward: /credit.jsp
+2019-04-16 11:53:41 INFO  Servlet:75 - path:deposits
+2019-04-16 11:53:41 INFO  Servlet:85 - forward: /deposit.jsp
+2019-04-16 11:53:42 INFO  Servlet:75 - path:depositPage
+2019-04-16 11:53:43 INFO  Servlet:85 - forward: /login.jsp
+2019-04-16 11:53:50 INFO  Servlet:75 - path:login
+2019-04-16 11:53:50 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:53:50 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:53:50 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:53:50 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 11:53:50 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 11:53:50 INFO  UserFilter:29 - role = user
+2019-04-16 11:53:50 INFO  Servlet:75 - path:user
+2019-04-16 11:53:50 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 11:53:54 INFO  Servlet:75 - path:deposits
+2019-04-16 11:53:54 INFO  Servlet:85 - forward: /deposit.jsp
+2019-04-16 11:53:56 INFO  Servlet:75 - path:depositPage
+2019-04-16 11:53:56 INFO  Servlet:85 - forward: /WEB-INF/view/user/getDeposit.jsp
+2019-04-16 11:54:07 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:07 INFO  Servlet:75 - path:user/getDeposit
+2019-04-16 11:54:07 INFO  JDBCDepositDAO:46 - Deposit was created 
+2019-04-16 11:54:07 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:54:07 INFO  Servlet:85 - forward: /WEB-INF/view/user/success.jsp
+2019-04-16 11:54:14 INFO  Servlet:75 - path:privateAccount
+2019-04-16 11:54:14 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 11:54:14 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:14 INFO  Servlet:75 - path:user
+2019-04-16 11:54:14 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 11:54:16 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:16 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 11:54:16 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 11:54:16 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 11:54:16 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 11:54:18 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:18 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 11:54:18 INFO  AccountInfoCommand:20 - Acount info command acId=69
+2019-04-16 11:54:18 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:18 INFO  ParseDate:21 - Строка 2019-04-16 11:31:46 распаршена как Tue Apr 16 11:31:46 EEST 2019
+2019-04-16 11:54:18 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:18 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:18 INFO  JDBCAccountDAO:117 - account is Account{id=69, money=0, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=14, idAcc=69, money=666600, percent=75, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 11:54:07 EEST 2019}]}
+2019-04-16 11:54:18 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=69, money=0, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=14, idAcc=69, money=666600, percent=75, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 11:54:07 EEST 2019}]}
+2019-04-16 11:54:18 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 11:54:25 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:25 INFO  Servlet:75 - path:user/deleteDeposit
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  DepositUtil:22 - deposit which willb be delete Deposit{idDep=14, idAcc=69, money=666600, percent=75, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 11:54:07 EEST 2019}
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:31:46 распаршена как Tue Apr 16 11:31:46 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  JDBCAccountDAO:117 - account is Account{id=69, money=0, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=14, idAcc=69, money=666600, percent=75, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 11:54:07 EEST 2019}]}
+2019-04-16 11:54:25 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=69, money=0, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=14, idAcc=69, money=666600, percent=75, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 11:54:07 EEST 2019}]}
+2019-04-16 11:54:25 INFO  JDBCDepositDAO:98 - deposit was deleted
+2019-04-16 11:54:25 INFO  DepositUtil:25 - Deposit was deleted, must be 'null' null
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:31:46 распаршена как Tue Apr 16 11:31:46 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:25 распаршена как Tue Apr 16 11:54:25 EEST 2019
+2019-04-16 11:54:25 INFO  ParseDate:21 - Строка 2019-04-16 11:54:25 распаршена как Tue Apr 16 11:54:25 EEST 2019
+2019-04-16 11:54:25 INFO  JDBCAccountDAO:117 - account is Account{id=69, money=666600, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}, ChangeTime{idTime=87, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}, ChangeTime{idTime=88, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=69, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:25 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=69, money=666600, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}, ChangeTime{idTime=87, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}, ChangeTime{idTime=88, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=69, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:25 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:54:25 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 11:54:29 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:29 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 11:54:29 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 11:54:29 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 11:54:29 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 11:54:41 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:41 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 11:54:41 INFO  AccountInfoCommand:20 - Acount info command acId=2
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:41 INFO  JDBCAccountDAO:117 - account is Account{id=2, money=210900, closed=false, changeTime=[ChangeTime{idTime=1, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=2, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=68, changeTime=Tue Apr 16 10:09:31 EEST 2019, acId=2}, ChangeTime{idTime=69, changeTime=Tue Apr 16 10:09:55 EEST 2019, acId=2}, ChangeTime{idTime=70, changeTime=Tue Apr 16 10:18:33 EEST 2019, acId=2}, ChangeTime{idTime=71, changeTime=Tue Apr 16 10:18:45 EEST 2019, acId=2}, ChangeTime{idTime=76, changeTime=Tue Apr 16 10:41:32 EEST 2019, acId=2}, ChangeTime{idTime=77, changeTime=Tue Apr 16 10:41:55 EEST 2019, acId=2}, ChangeTime{idTime=78, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=47, changeTime=Mon Apr 15 02:58:18 EEST 2019, acId=2}, ChangeTime{idTime=79, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=48, changeTime=Mon Apr 15 02:59:21 EEST 2019, acId=2}, ChangeTime{idTime=51, changeTime=Mon Apr 15 07:16:31 EEST 2019, acId=2}, ChangeTime{idTime=52, changeTime=Mon Apr 15 08:15:49 EEST 2019, acId=2}, ChangeTime{idTime=53, changeTime=Mon Apr 15 08:58:01 EEST 2019, acId=2}, ChangeTime{idTime=54, changeTime=Mon Apr 15 09:23:46 EEST 2019, acId=2}, ChangeTime{idTime=55, changeTime=Mon Apr 15 09:23:58 EEST 2019, acId=2}, ChangeTime{idTime=56, changeTime=Mon Apr 15 09:24:10 EEST 2019, acId=2}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=1, account=2, money=1234, percent=35, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=8, account=2, money=12345, percent=35, type=INSTALLMENT_PLAN, termToClose=8, approved=false, rejected=false}, Credit{idCred=11, account=2, money=66600, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=12, account=2, money=666600, percent=12, type=HYPOTHEC, termToClose=60, approved=false, rejected=false}, Credit{idCred=13, account=2, money=123400, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=2, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:41 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=2, money=210900, closed=false, changeTime=[ChangeTime{idTime=1, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=2, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=68, changeTime=Tue Apr 16 10:09:31 EEST 2019, acId=2}, ChangeTime{idTime=69, changeTime=Tue Apr 16 10:09:55 EEST 2019, acId=2}, ChangeTime{idTime=70, changeTime=Tue Apr 16 10:18:33 EEST 2019, acId=2}, ChangeTime{idTime=71, changeTime=Tue Apr 16 10:18:45 EEST 2019, acId=2}, ChangeTime{idTime=76, changeTime=Tue Apr 16 10:41:32 EEST 2019, acId=2}, ChangeTime{idTime=77, changeTime=Tue Apr 16 10:41:55 EEST 2019, acId=2}, ChangeTime{idTime=78, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=47, changeTime=Mon Apr 15 02:58:18 EEST 2019, acId=2}, ChangeTime{idTime=79, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=48, changeTime=Mon Apr 15 02:59:21 EEST 2019, acId=2}, ChangeTime{idTime=51, changeTime=Mon Apr 15 07:16:31 EEST 2019, acId=2}, ChangeTime{idTime=52, changeTime=Mon Apr 15 08:15:49 EEST 2019, acId=2}, ChangeTime{idTime=53, changeTime=Mon Apr 15 08:58:01 EEST 2019, acId=2}, ChangeTime{idTime=54, changeTime=Mon Apr 15 09:23:46 EEST 2019, acId=2}, ChangeTime{idTime=55, changeTime=Mon Apr 15 09:23:58 EEST 2019, acId=2}, ChangeTime{idTime=56, changeTime=Mon Apr 15 09:24:10 EEST 2019, acId=2}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=1, account=2, money=1234, percent=35, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=8, account=2, money=12345, percent=35, type=INSTALLMENT_PLAN, termToClose=8, approved=false, rejected=false}, Credit{idCred=11, account=2, money=66600, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=12, account=2, money=666600, percent=12, type=HYPOTHEC, termToClose=60, approved=false, rejected=false}, Credit{idCred=13, account=2, money=123400, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=2, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:41 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 11:54:44 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:44 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 11:54:44 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 11:54:44 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=2, money=210900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 11:54:44 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 11:54:46 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:46 INFO  Servlet:75 - path:user/accountDelete
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-19 00:00:00 распаршена как Fri Apr 19 00:00:00 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:58:18 распаршена как Mon Apr 15 02:58:18 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 02:59:21 распаршена как Mon Apr 15 02:59:21 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 07:16:31 распаршена как Mon Apr 15 07:16:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:15:49 распаршена как Mon Apr 15 08:15:49 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 08:58:01 распаршена как Mon Apr 15 08:58:01 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:46 распаршена как Mon Apr 15 09:23:46 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:23:58 распаршена как Mon Apr 15 09:23:58 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-15 09:24:10 распаршена как Mon Apr 15 09:24:10 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:31 распаршена как Tue Apr 16 10:09:31 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:09:55 распаршена как Tue Apr 16 10:09:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:33 распаршена как Tue Apr 16 10:18:33 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:18:45 распаршена как Tue Apr 16 10:18:45 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:32 распаршена как Tue Apr 16 10:41:32 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:41:55 распаршена как Tue Apr 16 10:41:55 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  ParseDate:21 - Строка 2019-04-16 10:42:11 распаршена как Tue Apr 16 10:42:11 EEST 2019
+2019-04-16 11:54:46 INFO  JDBCAccountDAO:117 - account is Account{id=2, money=210900, closed=false, changeTime=[ChangeTime{idTime=1, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=2, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=68, changeTime=Tue Apr 16 10:09:31 EEST 2019, acId=2}, ChangeTime{idTime=69, changeTime=Tue Apr 16 10:09:55 EEST 2019, acId=2}, ChangeTime{idTime=70, changeTime=Tue Apr 16 10:18:33 EEST 2019, acId=2}, ChangeTime{idTime=71, changeTime=Tue Apr 16 10:18:45 EEST 2019, acId=2}, ChangeTime{idTime=76, changeTime=Tue Apr 16 10:41:32 EEST 2019, acId=2}, ChangeTime{idTime=77, changeTime=Tue Apr 16 10:41:55 EEST 2019, acId=2}, ChangeTime{idTime=78, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=47, changeTime=Mon Apr 15 02:58:18 EEST 2019, acId=2}, ChangeTime{idTime=79, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=48, changeTime=Mon Apr 15 02:59:21 EEST 2019, acId=2}, ChangeTime{idTime=51, changeTime=Mon Apr 15 07:16:31 EEST 2019, acId=2}, ChangeTime{idTime=52, changeTime=Mon Apr 15 08:15:49 EEST 2019, acId=2}, ChangeTime{idTime=53, changeTime=Mon Apr 15 08:58:01 EEST 2019, acId=2}, ChangeTime{idTime=54, changeTime=Mon Apr 15 09:23:46 EEST 2019, acId=2}, ChangeTime{idTime=55, changeTime=Mon Apr 15 09:23:58 EEST 2019, acId=2}, ChangeTime{idTime=56, changeTime=Mon Apr 15 09:24:10 EEST 2019, acId=2}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=1, account=2, money=1234, percent=35, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=8, account=2, money=12345, percent=35, type=INSTALLMENT_PLAN, termToClose=8, approved=false, rejected=false}, Credit{idCred=11, account=2, money=66600, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=12, account=2, money=666600, percent=12, type=HYPOTHEC, termToClose=60, approved=false, rejected=false}, Credit{idCred=13, account=2, money=123400, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=2, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:46 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=2, money=210900, closed=false, changeTime=[ChangeTime{idTime=1, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=2, changeTime=Fri Apr 19 00:00:00 EEST 2019, acId=2}, ChangeTime{idTime=68, changeTime=Tue Apr 16 10:09:31 EEST 2019, acId=2}, ChangeTime{idTime=69, changeTime=Tue Apr 16 10:09:55 EEST 2019, acId=2}, ChangeTime{idTime=70, changeTime=Tue Apr 16 10:18:33 EEST 2019, acId=2}, ChangeTime{idTime=71, changeTime=Tue Apr 16 10:18:45 EEST 2019, acId=2}, ChangeTime{idTime=76, changeTime=Tue Apr 16 10:41:32 EEST 2019, acId=2}, ChangeTime{idTime=77, changeTime=Tue Apr 16 10:41:55 EEST 2019, acId=2}, ChangeTime{idTime=78, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=47, changeTime=Mon Apr 15 02:58:18 EEST 2019, acId=2}, ChangeTime{idTime=79, changeTime=Tue Apr 16 10:42:11 EEST 2019, acId=2}, ChangeTime{idTime=48, changeTime=Mon Apr 15 02:59:21 EEST 2019, acId=2}, ChangeTime{idTime=51, changeTime=Mon Apr 15 07:16:31 EEST 2019, acId=2}, ChangeTime{idTime=52, changeTime=Mon Apr 15 08:15:49 EEST 2019, acId=2}, ChangeTime{idTime=53, changeTime=Mon Apr 15 08:58:01 EEST 2019, acId=2}, ChangeTime{idTime=54, changeTime=Mon Apr 15 09:23:46 EEST 2019, acId=2}, ChangeTime{idTime=55, changeTime=Mon Apr 15 09:23:58 EEST 2019, acId=2}, ChangeTime{idTime=56, changeTime=Mon Apr 15 09:24:10 EEST 2019, acId=2}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=1, account=2, money=1234, percent=35, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=8, account=2, money=12345, percent=35, type=INSTALLMENT_PLAN, termToClose=8, approved=false, rejected=false}, Credit{idCred=11, account=2, money=66600, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}, Credit{idCred=12, account=2, money=666600, percent=12, type=HYPOTHEC, termToClose=60, approved=false, rejected=false}, Credit{idCred=13, account=2, money=123400, percent=4, type=CREDIT_CARD, termToClose=12, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=2, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:54:46 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 11:54:46 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 11:54:55 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:55 INFO  Servlet:75 - path:user
+2019-04-16 11:54:55 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 11:54:57 INFO  UserFilter:29 - role = user
+2019-04-16 11:54:57 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 11:54:57 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 11:54:57 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 11:54:57 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 11:55:33 INFO  UserFilter:29 - role = user
+2019-04-16 11:55:33 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 11:55:33 INFO  AccountInfoCommand:20 - Acount info command acId=1
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 11:55:33 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 11:55:33 INFO  JDBCAccountDAO:117 - account is Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=1, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:55:33 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=1, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 11:55:33 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 11:55:40 INFO  Servlet:75 - path:main
+2019-04-16 11:55:40 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 11:55:47 INFO  Servlet:75 - path:privateAccount
+2019-04-16 11:55:47 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 11:55:47 INFO  UserFilter:29 - role = user
+2019-04-16 11:55:47 INFO  Servlet:75 - path:user
+2019-04-16 11:55:47 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:02:26 INFO  Servlet:75 - path:logout
+2019-04-16 12:02:26 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 12:02:31 INFO  Servlet:75 - path:credits
+2019-04-16 12:02:31 INFO  Servlet:85 - forward: /credit.jsp
+2019-04-16 12:02:33 INFO  Servlet:75 - path:deposits
+2019-04-16 12:02:33 INFO  Servlet:85 - forward: /deposit.jsp
+2019-04-16 12:02:34 INFO  Servlet:75 - path:loginpage
+2019-04-16 12:02:34 INFO  LoginPageCommand:16 - user : null
+2019-04-16 12:02:34 INFO  Servlet:85 - forward: /login.jsp
+2019-04-16 12:02:38 INFO  Servlet:75 - path:login
+2019-04-16 12:02:38 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:02:38 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:02:38 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:02:38 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 12:02:38 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 12:02:38 INFO  UserFilter:29 - role = user
+2019-04-16 12:02:38 INFO  Servlet:75 - path:user
+2019-04-16 12:02:38 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:02:41 INFO  UserFilter:29 - role = user
+2019-04-16 12:02:41 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 12:02:41 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:02:41 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:02:41 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 12:02:45 INFO  UserFilter:29 - role = user
+2019-04-16 12:02:45 INFO  Servlet:75 - path:user/openAccount
+2019-04-16 12:02:45 INFO  OpenAccountCommand:22 - Account create command 
+2019-04-16 12:02:45 INFO  JDBCAccountDAO:217 - Account added into stuff table acc:71 user:2
+2019-04-16 12:02:45 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:02:45 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:02:45 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:02:45 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:02:45 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:02:48 INFO  UserFilter:29 - role = user
+2019-04-16 12:02:48 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 12:02:48 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:02:48 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:02:48 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 12:02:51 INFO  UserFilter:29 - role = user
+2019-04-16 12:02:51 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 12:02:51 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 12:02:51 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:02:51 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:02:51 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:02:51 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:02:54 INFO  Servlet:75 - path:deposits
+2019-04-16 12:02:54 INFO  Servlet:85 - forward: /deposit.jsp
+2019-04-16 12:02:56 INFO  Servlet:75 - path:depositPage
+2019-04-16 12:02:56 INFO  Servlet:85 - forward: /WEB-INF/view/user/getDeposit.jsp
+2019-04-16 12:03:08 INFO  UserFilter:29 - role = user
+2019-04-16 12:03:08 INFO  Servlet:75 - path:user/getDeposit
+2019-04-16 12:03:08 INFO  JDBCDepositDAO:46 - Deposit was created 
+2019-04-16 12:03:08 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:03:08 INFO  Servlet:85 - forward: /WEB-INF/view/user/success.jsp
+2019-04-16 12:03:15 INFO  Servlet:75 - path:privateAccount
+2019-04-16 12:03:15 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 12:03:15 INFO  UserFilter:29 - role = user
+2019-04-16 12:03:15 INFO  Servlet:75 - path:user
+2019-04-16 12:03:15 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:03:18 INFO  UserFilter:29 - role = user
+2019-04-16 12:03:18 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 12:03:18 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:03:18 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:03:18 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 12:03:20 INFO  UserFilter:29 - role = user
+2019-04-16 12:03:20 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 12:03:20 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 12:03:20 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:03:20 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:03:20 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:03:20 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:03:25 INFO  UserFilter:29 - role = user
+2019-04-16 12:03:25 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 12:03:25 INFO  AccountInfoCommand:20 - Acount info command acId=1
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 12:03:25 INFO  JDBCAccountDAO:117 - account is Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=90, changeTime=Tue Apr 16 12:03:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=15, idAcc=1, money=148800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:03:08 EEST 2019}]}
+2019-04-16 12:03:25 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=90, changeTime=Tue Apr 16 12:03:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=15, idAcc=1, money=148800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:03:08 EEST 2019}]}
+2019-04-16 12:03:25 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:03:33 INFO  Servlet:75 - path:deposits
+2019-04-16 12:03:33 INFO  Servlet:85 - forward: /deposit.jsp
+2019-04-16 12:03:35 INFO  Servlet:75 - path:depositPage
+2019-04-16 12:03:35 INFO  Servlet:85 - forward: /WEB-INF/view/user/getDeposit.jsp
+2019-04-16 12:04:01 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:01 INFO  Servlet:75 - path:user/getDeposit
+2019-04-16 12:04:01 INFO  JDBCDepositDAO:46 - Deposit was created 
+2019-04-16 12:04:01 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:04:01 INFO  Servlet:85 - forward: /WEB-INF/view/user/success.jsp
+2019-04-16 12:04:08 INFO  Servlet:75 - path:privateAccount
+2019-04-16 12:04:08 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 12:04:08 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:08 INFO  Servlet:75 - path:user
+2019-04-16 12:04:08 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:04:11 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:11 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 12:04:11 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:04:11 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:04:11 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 12:04:12 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:12 INFO  Servlet:75 - path:user/accountInfo
+2019-04-16 12:04:12 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 12:04:12 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:12 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:04:12 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:12 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:12 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=16, idAcc=71, money=22800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:04:01 EEST 2019}]}
+2019-04-16 12:04:12 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=16, idAcc=71, money=22800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:04:01 EEST 2019}]}
+2019-04-16 12:04:12 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:04:23 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:23 INFO  Servlet:75 - path:user/deleteDeposit
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  DepositUtil:22 - deposit which willb be delete Deposit{idDep=16, idAcc=71, money=22800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:04:01 EEST 2019}
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=16, idAcc=71, money=22800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:04:01 EEST 2019}]}
+2019-04-16 12:04:23 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=0, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=16, idAcc=71, money=22800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:04:01 EEST 2019}]}
+2019-04-16 12:04:23 INFO  JDBCDepositDAO:98 - deposit was deleted
+2019-04-16 12:04:23 INFO  DepositUtil:25 - Deposit was deleted, must be 'null' null
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 12:04:23 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 12:04:23 INFO  JDBCAccountDAO:117 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:04:23 INFO  JDBCAccountDAO:68 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 12:04:23 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:04:23 INFO  Servlet:85 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 12:04:27 INFO  UserFilter:29 - role = user
+2019-04-16 12:04:27 INFO  Servlet:75 - path:user/userInfo
+2019-04-16 12:04:27 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:04:27 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:04:27 INFO  Servlet:85 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 12:42:35 INFO  UserFilter:29 - role = guest
+2019-04-16 12:42:42 INFO  Servlet:75 - path:
+2019-04-16 12:42:42 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 12:42:44 INFO  Servlet:75 - path:loginpage
+2019-04-16 12:42:44 INFO  LoginPageCommand:16 - user : null
+2019-04-16 12:42:44 INFO  Servlet:85 - forward: /login.jsp
+2019-04-16 12:42:49 INFO  Servlet:75 - path:login
+2019-04-16 12:42:49 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:42:49 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:42:49 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:42:49 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 12:42:49 INFO  Servlet:82 - redirect: redirect:/bank/user
+2019-04-16 12:42:49 INFO  UserFilter:29 - role = user
+2019-04-16 12:42:49 INFO  Servlet:75 - path:user
+2019-04-16 12:42:49 INFO  Servlet:85 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:42:54 INFO  UserFilter:29 - role = user
+2019-04-16 12:42:54 INFO  Servlet:75 - path:user/transferPage
+2019-04-16 12:42:54 INFO  Servlet:85 - forward: /index.jsp
+2019-04-16 12:48:59 INFO  Servlet:77 - path:main
+2019-04-16 12:48:59 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 12:49:01 INFO  Servlet:77 - path:loginpage
+2019-04-16 12:49:01 INFO  LoginPageCommand:16 - user : null
+2019-04-16 12:49:01 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 12:49:06 INFO  Servlet:77 - path:login
+2019-04-16 12:49:06 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:49:06 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:49:06 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 12:49:06 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 12:49:06 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 12:49:06 INFO  UserFilter:29 - role = user
+2019-04-16 12:49:06 INFO  Servlet:77 - path:user
+2019-04-16 12:49:06 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 12:49:08 INFO  UserFilter:29 - role = user
+2019-04-16 12:49:08 INFO  Servlet:77 - path:user/transferPage
+2019-04-16 12:49:08 INFO  Servlet:87 - forward: /WEB-INF/view/user/bankTransfer.jsp
+2019-04-16 12:49:12 INFO  UserFilter:29 - role = user
+2019-04-16 12:49:12 INFO  Servlet:77 - path:user/payBillPage
+2019-04-16 12:49:13 INFO  Servlet:87 - forward: /WEB-INF/view/user/payBill.jsp
+2019-04-16 12:49:18 INFO  UserFilter:29 - role = user
+2019-04-16 12:49:18 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 12:49:18 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 12:49:18 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 12:49:18 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:06:30 INFO  ParseDate:21 - Строка 2019-04-16 13:06:30 распаршена как Tue Apr 16 13:06:30 EEST 2019
+2019-04-16 13:06:30 INFO  JDBCAccountDAO:119 - account is Account{id=72, money=0, closed=false, changeTime=[ChangeTime{idTime=94, changeTime=Tue Apr 16 13:06:30 EEST 2019, acId=0}], users=[User{login='null', role=GUEST, pwdHash='null', name='null', surname='null', phone='null', accounts=[]}], credits=[Credit{idCred=0, account=72, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=72, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:06:30 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=72, money=0, closed=false, changeTime=[ChangeTime{idTime=94, changeTime=Tue Apr 16 13:06:30 EEST 2019, acId=0}], users=[User{login='null', role=GUEST, pwdHash='null', name='null', surname='null', phone='null', accounts=[]}], credits=[Credit{idCred=0, account=72, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=72, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:06:30 INFO  JDBCAccountDAO:222 - Account added into stuff table acc:72 user:1
+2019-04-16 13:06:30 INFO  JDBCAccountDAO:110 - account == null
+2019-04-16 13:06:30 INFO  JDBCAccountDAO:73 - SQLException when read account by id Something wrong in JDBCAccount dao createAccount
+2019-04-16 13:07:27 INFO  JDBCCreditDAO:43 - Credit was created 
+2019-04-16 13:07:45 INFO  JDBCCreditDAO:43 - Credit was created 
+2019-04-16 13:18:05 INFO  Servlet:77 - path:main
+2019-04-16 13:18:05 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:18:18 INFO  LangFilter:25 - locale= en
+2019-04-16 13:18:18 INFO  Servlet:77 - path:main
+2019-04-16 13:18:18 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:18:21 INFO  LangFilter:25 - locale= uk
+2019-04-16 13:18:21 INFO  Servlet:77 - path:main
+2019-04-16 13:18:21 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:18:24 INFO  LangFilter:25 - locale= en
+2019-04-16 13:18:24 INFO  Servlet:77 - path:main
+2019-04-16 13:18:24 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:18:27 INFO  LangFilter:25 - locale= uk
+2019-04-16 13:18:27 INFO  Servlet:77 - path:main
+2019-04-16 13:18:27 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:19:23 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:23 INFO  Servlet:77 - path:loginpage
+2019-04-16 13:19:23 INFO  LoginPageCommand:16 - user : null
+2019-04-16 13:19:23 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 13:19:27 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:27 INFO  Servlet:77 - path:login
+2019-04-16 13:19:27 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:19:27 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:19:27 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:19:27 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 13:19:27 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 13:19:27 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:27 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:27 INFO  Servlet:77 - path:user
+2019-04-16 13:19:27 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:19:29 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:29 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:29 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:19:29 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:19:29 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:19:29 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:19:31 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:31 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:31 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:19:31 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:19:31 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:19:31 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:19:31 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:19:31 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:19:31 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:19:31 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:19:31 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:19:39 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:39 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:39 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:19:39 INFO  AccountInfoCommand:20 - Acount info command acId=69
+2019-04-16 13:19:39 INFO  ParseDate:21 - Строка 2019-04-16 11:31:46 распаршена как Tue Apr 16 11:31:46 EEST 2019
+2019-04-16 13:19:39 INFO  ParseDate:21 - Строка 2019-04-16 11:54:07 распаршена как Tue Apr 16 11:54:07 EEST 2019
+2019-04-16 13:19:39 INFO  ParseDate:21 - Строка 2019-04-16 11:54:25 распаршена как Tue Apr 16 11:54:25 EEST 2019
+2019-04-16 13:19:39 INFO  ParseDate:21 - Строка 2019-04-16 11:54:25 распаршена как Tue Apr 16 11:54:25 EEST 2019
+2019-04-16 13:19:39 INFO  JDBCAccountDAO:119 - account is Account{id=69, money=666600, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}, ChangeTime{idTime=87, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}, ChangeTime{idTime=88, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=69, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:19:39 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=69, money=666600, closed=false, changeTime=[ChangeTime{idTime=84, changeTime=Tue Apr 16 11:31:46 EEST 2019, acId=69}, ChangeTime{idTime=86, changeTime=Tue Apr 16 11:54:07 EEST 2019, acId=69}, ChangeTime{idTime=87, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}, ChangeTime{idTime=88, changeTime=Tue Apr 16 11:54:25 EEST 2019, acId=69}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=69, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=69, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:19:39 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:19:44 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:44 INFO  Servlet:77 - path:deposits
+2019-04-16 13:19:44 INFO  Servlet:87 - forward: /deposit.jsp
+2019-04-16 13:19:46 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:46 INFO  Servlet:77 - path:depositPage
+2019-04-16 13:19:46 INFO  Servlet:87 - forward: /WEB-INF/view/user/getDeposit.jsp
+2019-04-16 13:19:54 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:54 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:54 INFO  Servlet:77 - path:user/getDeposit
+2019-04-16 13:19:54 INFO  JDBCDepositDAO:46 - Deposit was created 
+2019-04-16 13:19:54 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:19:54 INFO  Servlet:87 - forward: /WEB-INF/view/user/success.jsp
+2019-04-16 13:19:57 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:57 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:57 INFO  Servlet:77 - path:user
+2019-04-16 13:19:57 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:19:59 INFO  UserFilter:29 - role = user
+2019-04-16 13:19:59 INFO  LangFilter:25 - locale= en
+2019-04-16 13:19:59 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:19:59 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:19:59 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:19:59 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:20:01 INFO  UserFilter:29 - role = user
+2019-04-16 13:20:01 INFO  LangFilter:25 - locale= en
+2019-04-16 13:20:01 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:20:01 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:20:01 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:20:01 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:20:01 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:22:35 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:35 INFO  Servlet:77 - path:deposits
+2019-04-16 13:22:36 INFO  Servlet:87 - forward: /deposit.jsp
+2019-04-16 13:22:37 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:37 INFO  Servlet:77 - path:loginpage
+2019-04-16 13:22:37 INFO  LoginPageCommand:16 - user : null
+2019-04-16 13:22:37 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 13:22:42 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:42 INFO  Servlet:77 - path:login
+2019-04-16 13:22:42 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:22:42 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:22:42 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:22:42 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 13:22:42 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 13:22:42 INFO  UserFilter:29 - role = user
+2019-04-16 13:22:42 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:42 INFO  Servlet:77 - path:user
+2019-04-16 13:22:42 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:22:44 INFO  UserFilter:29 - role = user
+2019-04-16 13:22:44 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:44 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:22:44 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:22:44 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:22:44 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:22:46 INFO  UserFilter:29 - role = user
+2019-04-16 13:22:46 INFO  LangFilter:25 - locale= en
+2019-04-16 13:22:46 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:22:46 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:22:46 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:22:46 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:22:47 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:28:44 INFO  UserFilter:29 - role = user
+2019-04-16 13:28:44 INFO  LangFilter:25 - locale= en
+2019-04-16 13:28:44 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:28:44 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:28:44 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:28:44 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:28:44 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:28:45 INFO  LangFilter:25 - locale= en
+2019-04-16 13:28:48 INFO  UserFilter:29 - role = user
+2019-04-16 13:28:48 INFO  LangFilter:25 - locale= uk
+2019-04-16 13:28:48 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:28:48 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:28:48 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:28:48 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:28:48 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:29:46 INFO  LangFilter:25 - locale= en
+2019-04-16 13:29:46 INFO  Servlet:77 - path:credits
+2019-04-16 13:29:46 INFO  Servlet:87 - forward: /credit.jsp
+2019-04-16 13:29:47 INFO  LangFilter:25 - locale= en
+2019-04-16 13:29:47 INFO  Servlet:77 - path:loginpage
+2019-04-16 13:29:47 INFO  LoginPageCommand:16 - user : null
+2019-04-16 13:29:48 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 13:29:55 INFO  LangFilter:25 - locale= en
+2019-04-16 13:29:55 INFO  Servlet:77 - path:login
+2019-04-16 13:29:55 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:29:55 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:29:55 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:29:55 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 13:29:55 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 13:29:55 INFO  UserFilter:29 - role = user
+2019-04-16 13:29:55 INFO  LangFilter:25 - locale= en
+2019-04-16 13:29:55 INFO  Servlet:77 - path:user
+2019-04-16 13:29:55 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:29:58 INFO  UserFilter:29 - role = user
+2019-04-16 13:29:58 INFO  LangFilter:25 - locale= en
+2019-04-16 13:29:58 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:29:58 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:29:58 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:29:58 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:30:00 INFO  UserFilter:29 - role = user
+2019-04-16 13:30:00 INFO  LangFilter:25 - locale= en
+2019-04-16 13:30:00 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:30:00 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:30:00 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:00 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:00 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:30:09 INFO  UserFilter:29 - role = user
+2019-04-16 13:30:09 INFO  LangFilter:25 - locale= uk
+2019-04-16 13:30:09 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:30:09 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:30:09 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:09 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:09 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:30:14 INFO  UserFilter:29 - role = user
+2019-04-16 13:30:14 INFO  LangFilter:25 - locale= en
+2019-04-16 13:30:14 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:30:14 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:30:14 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:14 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:14 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:30:19 INFO  UserFilter:29 - role = user
+2019-04-16 13:30:19 INFO  LangFilter:25 - locale= uk
+2019-04-16 13:30:19 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:30:19 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:30:19 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:19 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:30:19 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:31:10 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:10 INFO  Servlet:77 - path:deposits
+2019-04-16 13:31:13 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:13 INFO  Servlet:77 - path:deposits
+2019-04-16 13:31:13 INFO  Servlet:87 - forward: /deposit.jsp
+2019-04-16 13:31:13 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:13 INFO  Servlet:77 - path:deposits
+2019-04-16 13:31:13 INFO  Servlet:87 - forward: /deposit.jsp
+2019-04-16 13:31:15 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:15 INFO  Servlet:77 - path:loginpage
+2019-04-16 13:31:15 INFO  LoginPageCommand:16 - user : null
+2019-04-16 13:31:15 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 13:31:20 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:20 INFO  Servlet:77 - path:login
+2019-04-16 13:31:20 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:31:20 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:31:20 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:31:20 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 13:31:20 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 13:31:20 INFO  UserFilter:29 - role = user
+2019-04-16 13:31:20 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:20 INFO  Servlet:77 - path:user
+2019-04-16 13:31:20 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:31:22 INFO  UserFilter:29 - role = user
+2019-04-16 13:31:22 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:22 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:31:22 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:31:22 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:31:22 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:31:25 INFO  UserFilter:29 - role = user
+2019-04-16 13:31:25 INFO  LangFilter:25 - locale= en
+2019-04-16 13:31:25 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:31:25 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:31:25 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:31:25 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:31:25 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:32:46 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:46 INFO  Servlet:77 - path:main
+2019-04-16 13:32:46 INFO  Servlet:87 - forward: /index.jsp
+2019-04-16 13:32:47 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:47 INFO  Servlet:77 - path:loginpage
+2019-04-16 13:32:47 INFO  LoginPageCommand:16 - user : null
+2019-04-16 13:32:47 INFO  Servlet:87 - forward: /login.jsp
+2019-04-16 13:32:53 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:53 INFO  Servlet:77 - path:login
+2019-04-16 13:32:53 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:32:53 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:32:53 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:32:53 INFO  LoginSubmitCommand:32 - Login check: true
+2019-04-16 13:32:53 INFO  Servlet:84 - redirect: redirect:/bank/user
+2019-04-16 13:32:53 INFO  UserFilter:29 - role = user
+2019-04-16 13:32:53 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:53 INFO  Servlet:77 - path:user
+2019-04-16 13:32:53 INFO  Servlet:87 - forward: /WEB-INF/view/user/mainUsr.jsp
+2019-04-16 13:32:55 INFO  UserFilter:29 - role = user
+2019-04-16 13:32:55 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:55 INFO  Servlet:77 - path:user/userInfo
+2019-04-16 13:32:55 INFO  UserInfoPageCommand:13 - User :Genya
+2019-04-16 13:32:55 INFO  UserInfoPageCommand:14 - User's accounts : [Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=22800, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]
+2019-04-16 13:32:55 INFO  Servlet:87 - forward: /WEB-INF/view/user/userInfo.jsp
+2019-04-16 13:32:57 INFO  UserFilter:29 - role = user
+2019-04-16 13:32:57 INFO  LangFilter:25 - locale= en
+2019-04-16 13:32:57 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:32:57 INFO  AccountInfoCommand:20 - Acount info command acId=71
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:32:57 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:32:57 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:32:57 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:33:01 INFO  UserFilter:29 - role = user
+2019-04-16 13:33:01 INFO  LangFilter:25 - locale= en
+2019-04-16 13:33:01 INFO  Servlet:77 - path:user/deleteDeposit
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  DepositUtil:22 - deposit which willb be delete Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 01:19:54 распаршена как Tue Apr 16 01:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:33:01 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=22800, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=17, idAcc=71, money=66600, percent=1, type=STANDART, receivedMoney=0, startDate=Tue Apr 16 01:19:54 EEST 2019}]}
+2019-04-16 13:33:01 INFO  JDBCDepositDAO:98 - deposit was deleted
+2019-04-16 13:33:01 INFO  DepositUtil:25 - Deposit was deleted, must be 'null' null
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:02:45 распаршена как Tue Apr 16 12:02:45 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:01 распаршена как Tue Apr 16 12:04:01 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 12:04:23 распаршена как Tue Apr 16 12:04:23 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 13:19:54 распаршена как Tue Apr 16 13:19:54 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 13:33:01 распаршена как Tue Apr 16 13:33:01 EEST 2019
+2019-04-16 13:33:01 INFO  ParseDate:21 - Строка 2019-04-16 13:33:01 распаршена как Tue Apr 16 13:33:01 EEST 2019
+2019-04-16 13:33:01 INFO  JDBCAccountDAO:119 - account is Account{id=71, money=89400, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=99, changeTime=Tue Apr 16 13:33:01 EEST 2019, acId=71}, ChangeTime{idTime=100, changeTime=Tue Apr 16 13:33:01 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:33:01 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=71, money=89400, closed=false, changeTime=[ChangeTime{idTime=98, changeTime=Tue Apr 16 13:19:54 EEST 2019, acId=71}, ChangeTime{idTime=99, changeTime=Tue Apr 16 13:33:01 EEST 2019, acId=71}, ChangeTime{idTime=100, changeTime=Tue Apr 16 13:33:01 EEST 2019, acId=71}, ChangeTime{idTime=89, changeTime=Tue Apr 16 12:02:45 EEST 2019, acId=71}, ChangeTime{idTime=91, changeTime=Tue Apr 16 12:04:01 EEST 2019, acId=71}, ChangeTime{idTime=92, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}, ChangeTime{idTime=93, changeTime=Tue Apr 16 12:04:23 EEST 2019, acId=71}], users=[User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=71, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=0, idAcc=71, money=0, percent=0, type=null, receivedMoney=0, startDate=null}]}
+2019-04-16 13:33:01 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=436841, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=666600, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=89400, closed=false, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-16 13:33:01 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 13:33:34 INFO  UserFilter:29 - role = user
+2019-04-16 13:33:34 INFO  LangFilter:25 - locale= en
+2019-04-16 13:33:34 INFO  Servlet:77 - path:user/accountInfo
+2019-04-16 13:33:34 INFO  AccountInfoCommand:20 - Acount info command acId=1
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:05:43 распаршена как Mon Apr 15 10:05:43 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:39:08 распаршена как Mon Apr 15 10:39:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 10:58:45 распаршена как Mon Apr 15 10:58:45 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:10:16 распаршена как Mon Apr 15 11:10:16 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:10:33 распаршена как Mon Apr 15 11:10:33 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-15 11:17:19 распаршена как Mon Apr 15 11:17:19 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 09:57:11 распаршена как Tue Apr 16 09:57:11 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  ParseDate:21 - Строка 2019-04-16 12:03:08 распаршена как Tue Apr 16 12:03:08 EEST 2019
+2019-04-16 13:33:34 INFO  JDBCAccountDAO:119 - account is Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=90, changeTime=Tue Apr 16 12:03:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=15, idAcc=1, money=148800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:03:08 EEST 2019}]}
+2019-04-16 13:33:34 INFO  JDBCAccountDAO:70 - account read in account dao Account{id=1, money=436841, closed=false, changeTime=[ChangeTime{idTime=64, changeTime=Mon Apr 15 11:10:16 EEST 2019, acId=1}, ChangeTime{idTime=65, changeTime=Mon Apr 15 11:10:33 EEST 2019, acId=1}, ChangeTime{idTime=66, changeTime=Mon Apr 15 11:17:19 EEST 2019, acId=1}, ChangeTime{idTime=67, changeTime=Tue Apr 16 09:57:11 EEST 2019, acId=1}, ChangeTime{idTime=57, changeTime=Mon Apr 15 10:05:43 EEST 2019, acId=1}, ChangeTime{idTime=58, changeTime=Mon Apr 15 10:39:08 EEST 2019, acId=1}, ChangeTime{idTime=90, changeTime=Tue Apr 16 12:03:08 EEST 2019, acId=1}, ChangeTime{idTime=63, changeTime=Mon Apr 15 10:58:45 EEST 2019, acId=1}], users=[User{login='admin', role=ADMIN, pwdHash='$2a$10$qUnlHIUmR6yQjJ1V8AE/U.GDDssVPOmfxaCXwkZy8QIOkPiF.on96', name='Yevhenii', surname='Milash', phone='+380678865467', accounts=[]}, User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[]}], credits=[Credit{idCred=0, account=1, money=0, percent=0, type=null, termToClose=0, approved=false, rejected=false}], deposits=[Deposit{idDep=15, idAcc=1, money=148800, percent=16, type=JUNIOR, receivedMoney=0, startDate=Tue Apr 16 12:03:08 EEST 2019}]}
+2019-04-16 13:33:34 INFO  Servlet:87 - forward: /WEB-INF/view/user/account.jsp
+2019-04-16 14:05:45 INFO  LangFilter:25 - locale= en
+2019-04-16 14:05:45 INFO  Servlet:77 - path:credits
+2019-04-16 14:05:45 INFO  Servlet:87 - forward: /credit.jsp
+2019-04-16 14:05:47 INFO  LangFilter:25 - locale= en
+2019-04-16 14:05:47 INFO  Servlet:77 - path:credits
+2019-04-16 14:05:47 INFO  Servlet:87 - forward: /credit.jsp
+2019-04-16 14:05:48 INFO  LangFilter:25 - locale= en
+2019-04-16 14:05:48 INFO  Servlet:77 - path:credits
+2019-04-16 14:05:48 INFO  Servlet:87 - forward: /credit.jsp
+2019-04-16 14:05:49 INFO  LangFilter:25 - locale= en
+2019-04-16 14:05:49 INFO  Servlet:77 - path:main
+2019-04-16 14:05:50 INFO  Servlet:87 - forward: /index.jsp

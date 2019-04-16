@@ -1,0 +1,22 @@
+.btn.btn-ex {
+    border-radius: 5rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 80%;
+    position: fixed;
+    bottom: 4%;
+    left: 4%;
+    width: 90%;
+
+    border-color: white;
+}
+.table.table-custom {
+    width: 80%;
+    position: relative;
+    left: 4%;
+}
+.table.table-30{
+    width: 30%;
+    position: relative;
+    left: 4%;
+}
