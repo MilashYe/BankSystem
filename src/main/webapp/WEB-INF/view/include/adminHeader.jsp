@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/bank/admin/approveCredit">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/bank/admin/approveCreditPage">
                         <c:out value="Approve credits"/>
                     </a>
                 </li>

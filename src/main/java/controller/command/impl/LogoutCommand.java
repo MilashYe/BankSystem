@@ -8,7 +8,7 @@ public class LogoutCommand implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 
-		request.getSession().setAttribute("user", null);
+		request.getSession().removeAttribute("user");
 		return "/index.jsp";
 	}
 }

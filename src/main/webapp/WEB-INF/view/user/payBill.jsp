@@ -15,42 +15,61 @@
 </head>
 <body>
     <jsp:include page="../include/userHeader.jsp"/>
-    <form name="payBillForm" action="${pageContext.request.contextPath}/bank/user/payBill" method="post">
-        <table>
-            <tr>
-                <th>from account</th>
-                <th>to account</th>
-            </tr>
-            <tr>
-                <td>
-                    <label>
-                        <select name="account1">
-                            <c:forEach var="account" items="${sessionScope.user.accounts}">
-                                <option value="${account.id}"><c:out value="account ${account.id}"/> </option>
-                            </c:forEach>
-                        </select>
-                    </label>
-                </td>
-                <td>
-                    <input type="number" name="account2" required>
-                </td>
-            </tr>
-        </table>
-        <p>
-            <label>
-                <input name="money" type="number" required>
-            </label>
-        </p>
-        <c:if test="${not empty info}">
-            <div class="alert alert-danger" role="alert">
-                <c:out value="${info}"/>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">
+                            <c:out value="Pay bill"/>
+                        </h5>
+                        <form class="form-signin" method="post" action="${pageContext.request.contextPath}/bank/user/payBill">
+                            <table>
+                                <tr>
+                                    <th>from account</th>
+                                    <th>to account</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>
+                                            <select name="account1">
+                                                <c:forEach var="account" items="${sessionScope.user.accounts}">
+                                                    <option value="${account.id}"><c:out value="account ${account.id}"/> </option>
+                                                </c:forEach>
+                                            </select>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label>
+                                            <input type="number" name="account2" required>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>
+                                <label>
+                                    <input name="money" type="number" required>
+                                </label>
+                            </p>
+                            <c:if test="${not empty requestScope.info}">
+                                <div class="alert alert-danger" role="alert">
+                                    <c:out value="${requestScope.info}"/>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
 
-        </c:if>
-        <button type="submit" class="btn btn-success text-uppercase">pay</button>
-    </form>
+                            </c:if>
+
+
+                            <button type="submit" class="btn btn-success text-uppercase">pay</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

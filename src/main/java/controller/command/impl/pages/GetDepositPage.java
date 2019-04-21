@@ -15,6 +15,7 @@ public class GetDepositPage implements Command {
 
     private String getRedirect(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
+
         Role role;
 
         if (user == null) {

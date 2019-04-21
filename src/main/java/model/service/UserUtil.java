@@ -3,8 +3,10 @@ package model.service;
 import model.dao.DAOFactory;
 import model.dao.interfaces.UserDAO;
 import model.entity.User;
+import model.entity.enums.Role;
 import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class UserUtil {
@@ -34,5 +36,17 @@ public class UserUtil {
     }
 
 
+    public ArrayList<User> readAll() {
+        try (UserDAO dao = DAOFactory.getInstance().createUserDAO()) {
+            return (ArrayList<User>) dao.readAll();
+        }
+    }
 
+    public ArrayList<User> readOnlyUsers() {
+        try (UserDAO dao = DAOFactory.getInstance().createUserDAO()) {
+            return (ArrayList<User>) dao.readAll().stream().
+                    filter(o1 -> o1.getRole().equals(Role.USER.getRole())).
+                    collect(Collectors.toList());
+        }
+    }
 }

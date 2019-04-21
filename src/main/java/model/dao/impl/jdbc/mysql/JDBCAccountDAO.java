@@ -3,6 +3,9 @@ package model.dao.impl.jdbc.mysql;
 import model.dao.impl.jdbc.mapper.*;
 import model.dao.interfaces.AccountDAO;
 import model.entity.*;
+import model.exception.AccountNotCreateException;
+import model.exception.AccountNotUpdateException;
+import model.exception.UserToAccountException;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -63,7 +66,7 @@ public class JDBCAccountDAO implements AccountDAO {
 			return account;
 		} catch (SQLException e) {
 			log.info("SQLException when read account by id " + e.getMessage());
-			return null;
+			throw new AccountNotCreateException("account not create");
 		}
 	}
 
@@ -168,18 +171,13 @@ public class JDBCAccountDAO implements AccountDAO {
 			addTime(entity.getId(),"Account money were updated, balance is "+entity.getMoney()/100);
 			statement.close();
 		} catch (SQLException e) {
-			try {
-				connection.rollback();
-				log.info("Error in account update");
-			} catch (SQLException ex) {
-				ex.printStackTrace();
-			}
-			e.printStackTrace();
+			log.info("Error in account update");
+			throw new AccountNotUpdateException("Error when update account " + entity.getId() + " " + e.getMessage());
 		}
 	}
 
 	@Override
-	public void addTime(int accountId, String message) throws SQLException {
+	public void addTime(int accountId, String message) {
 		try(PreparedStatement statement = connection.prepareStatement(SQLQueries.CREATE_TIME)) {
 			statement.setInt(2, accountId);
 			statement.setString(1, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
@@ -189,6 +187,20 @@ public class JDBCAccountDAO implements AccountDAO {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void addUserToAccount(int idAc, int idU) {
+		try (PreparedStatement statement = connection.prepareStatement(SQLQueries.ADD_USER_AND_ACCOUNT)) {
+			statement.setInt(1, idAc);
+			statement.setInt(2, idU);
+			statement.executeUpdate();
+			log.info("User added to account");
+
+		} catch (SQLException e) {
+			log.info("Error in add user to account" + e.getMessage());
+			throw new UserToAccountException("User already connect to this account");
 		}
 	}
 
@@ -221,7 +233,8 @@ public class JDBCAccountDAO implements AccountDAO {
 			connection.commit();
 			log.info("Account added into stuff table acc:"+accountId+" user:"+userId);
 		} catch (SQLException e) {
-			log.info("error in addAccount" + e);
+			log.info("error in addAccount " + e);
+			throw new UserToAccountException("Account already added");
 		}
 	}
 

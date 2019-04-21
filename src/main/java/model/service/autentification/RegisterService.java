@@ -3,7 +3,7 @@ package model.service.autentification;
 import model.dao.DAOFactory;
 import model.dao.interfaces.UserDAO;
 import model.entity.User;
-import model.exception.UserExistException;
+import model.exception.UserNoExistException;
 
 public class RegisterService {
 
@@ -13,7 +13,7 @@ public class RegisterService {
         try {
             User user = dao.readByLogin(login);
             return user.getName() != null;
-        } catch (UserExistException e) {
+        } catch (UserNoExistException e) {
             return false;
         }
     }

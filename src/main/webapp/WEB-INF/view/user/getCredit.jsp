@@ -10,8 +10,6 @@
 <head>
     <title>Get credit</title>
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <script src="${pageContext.request.contextPath}/webjars/jquery/3.0.0/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -25,7 +23,7 @@
         <option value = "installment_pay">Installment pay</option>
     </select>
     <p>input sum</p>
-    <input name="inputMoney" type="text">
+    <input name="inputMoney" type="number">
 
     <p>choose term(for hypothec)</p>
     <select name="hypothec_term_close">

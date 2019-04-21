@@ -104,7 +104,7 @@ public class JDBCUserDAO implements UserDAO {
 		}
 		log.info("User was created "+findingUser);
 		if (findingUser == null) {
-			throw new SQLException("Something wrong in UserDao");
+			throw new UserNoExistException("User not exist");
 		} else {
 			return findingUser;
 		}

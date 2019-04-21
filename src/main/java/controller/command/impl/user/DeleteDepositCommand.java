@@ -26,7 +26,7 @@ public class DeleteDepositCommand implements Command {
         account = new AccountUtil().getNotEmptyDeposits(account);
 */
 
-        request.setAttribute("account", new AccountUtil().sortDate(account));
+        request.setAttribute("account", account);
         request.setAttribute("acId", account.getId());
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));

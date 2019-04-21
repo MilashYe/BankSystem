@@ -19,7 +19,7 @@ public class PayBillCommand implements Command {
         try {
             new AccountUtil().payBillByNumber(
                     Integer.parseInt(request.getParameter("account1")),
-                    Integer.parseInt(request.getParameter("account2")),
+                    request.getParameter("account2"),
                     Integer.parseInt(request.getParameter("money"))
             );
         }catch (NotEnoughtMoneyException ex) {
@@ -28,6 +28,7 @@ public class PayBillCommand implements Command {
         }
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
+        request.setAttribute("success","Successfully");
         request.getSession().setAttribute("user",user);
         return "redirect:/bank/user/userMain";
     }

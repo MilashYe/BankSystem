@@ -3,6 +3,7 @@ package controller.command.impl.user;
 import controller.command.Command;
 import model.entity.User;
 import model.exception.NotEnoughtMoneyException;
+import model.exception.WrongDestinationAccountException;
 import model.service.AccountUtil;
 import model.service.UserUtil;
 
@@ -22,11 +23,15 @@ public class TransferCommand implements Command {
                     Integer.parseInt(request.getParameter("account2")),
                     Integer.parseInt(request.getParameter("money")));
         } catch (NotEnoughtMoneyException ex) {
-            request.setAttribute("info","Not enought money");
+            request.setAttribute("info", "Not enought money");
+            return "/WEB-INF/view/user/bankTransfer.jsp";
+        } catch (WrongDestinationAccountException ex) {
+            request.setAttribute("info", ex.getMessage());
             return "/WEB-INF/view/user/bankTransfer.jsp";
         }
         User user = (User) request.getSession().getAttribute("user") ;
         user = new UserUtil().updateUser(user);
+        request.setAttribute("success","Successfully");
         request.getSession().setAttribute("user",user);
         return "redirect:/bank/user/userMain";
     }

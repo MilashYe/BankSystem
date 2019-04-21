@@ -1,7 +1,6 @@
 package controller.command.impl.user;
 
 import controller.command.Command;
-import model.entity.Account;
 import model.service.AccountUtil;
 import org.apache.log4j.Logger;
 
@@ -18,8 +17,7 @@ public class AccountInfoCommand implements Command {
     private void process(HttpServletRequest request) {
         log.info("Acount info command acId="+request.getParameter("acId"));
         int accountId = Integer.parseInt(request.getParameter("acId"));
-        Account readAccount = new AccountUtil().readById(accountId);
-        request.setAttribute("account", new AccountUtil().sortDate(readAccount));
+        request.setAttribute("account", new AccountUtil().readById(accountId));
 
     }
 }

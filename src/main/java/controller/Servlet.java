@@ -2,6 +2,9 @@ package controller;
 
 import controller.command.Command;
 import controller.command.impl.LogoutCommand;
+import controller.command.impl.admin.AddUserToAccountCommand;
+import controller.command.impl.admin.ApproveCreditCommand;
+import controller.command.impl.admin.RejectCreditCommand;
 import controller.command.impl.guest.LoginSubmitCommand;
 import controller.command.impl.guest.RegistrationSubmitCommand;
 import controller.command.impl.pages.*;
@@ -59,7 +62,10 @@ public class Servlet extends HttpServlet {
 		commands.put("admin/main", new MainPageCommand());
 		commands.put("admin/addUsers", new AddUserToAccountPage());
 		commands.put("admin/statistic", new StatisticPageCommand());
-		commands.put("admin/approveCredit", new ApproveCreditPageCommand());
+		commands.put("admin/approveCreditPage", new ApproveCreditPageCommand());
+		commands.put("admin/approveCredit", new ApproveCreditCommand());
+		commands.put("admin/rejectCredit", new RejectCreditCommand());
+		commands.put("admin/connectUser", new AddUserToAccountCommand());
 
 
 

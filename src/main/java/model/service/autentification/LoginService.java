@@ -19,6 +19,7 @@ public class LoginService {
             return true;
         } catch (UserNoExistException ex) {
             logger.info("user not exist in login service login");
+
             return false;
         }
     }

@@ -1,4 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -20,8 +21,13 @@
 <body>
 <!-- Navigation -->
 
+<c:if test="${(not empty sessionScope.user) and (sessionScope.user.role eq 'admin')}">
+        <jsp:include page="WEB-INF/view/include/adminHeader.jsp"/>
+</c:if>
+<c:if test="${(empty sessionScope.user) or (sessionScope.user.role eq 'user')}">
+    <jsp:include page="WEB-INF/view/include/header.jsp"/>
+</c:if>
 
-<jsp:include page="WEB-INF/view/include/header.jsp"/>
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead">

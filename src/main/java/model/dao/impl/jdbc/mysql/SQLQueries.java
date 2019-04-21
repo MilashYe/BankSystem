@@ -63,4 +63,7 @@ public interface SQLQueries {
 			"where id_dep = (?);";
 
     String READ_TIME_ALL = "select * from time;";
+    String READ_ALL_CREDITS = "select * from credit;";
+    String GET_TIME_COUNT = "select count(*) from time;";
+    String GET_TIME_IN_RANGE = "SELECT * FROM time order by account_id_ac LIMIT ?, ? ";
 }

@@ -1,7 +1,6 @@
 package controller.command.impl.user;
 
 import controller.command.Command;
-import model.entity.Account;
 import model.entity.Credit;
 import model.entity.User;
 import model.service.AccountUtil;
@@ -22,12 +21,7 @@ public class DeleteCreditCommand implements Command {
         Credit credit = new CreditUtil().readById(creditId);
         new CreditUtil().setDisapprovedCreditById(creditId);
 
-        Account account = new AccountUtil().readById(credit.getAccount());
-        /*account = new AccountUtil().getApprovedCredit(account);
-        account = new AccountUtil().getNotEmptyDeposits(account);
-*/
-
-        request.setAttribute("account", new AccountUtil().sortDate(account));
+        request.setAttribute("account",new AccountUtil().readById(credit.getAccount()));
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
         request.getSession().setAttribute("user",user);

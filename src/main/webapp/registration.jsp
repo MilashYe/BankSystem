@@ -13,13 +13,9 @@
     <link href="${pageContext.request.contextPath}/css/registration.css" rel="stylesheet" type="text/css"/>
 
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <script src="${pageContext.request.contextPath}/webjars/jquery/3.0.0/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-    <%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 
     <fmt:setLocale value="${sessionScope.lang}"/>
     <fmt:setBundle basename="message" />
@@ -41,73 +37,71 @@
                     <form class="form-signin" method="post" action="${pageContext.request.contextPath}/bank/register">
 
 
-                        <c:if test="${not empty info || alert}">
-                            <div class="alert alert-danger" role="alert">
-                                <c:out value="${info}"/>
-                                <c:out value="${wrongName}"/>
-                                <c:out value="${wrongSurname}"/>
-                                <c:out value="${wrongPhone}"/>
+                    <c:if test="${not empty info || alert}">
+                        <div class="alert alert-danger" role="alert">
+                            <c:out value="${info}"/>
+                            <c:out value="${wrongName}"/>
+                            <c:out value="${wrongSurname}"/>
+                            <c:out value="${wrongPhone}"/>
 
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-                        </c:if>
-
-
-
-                        <div class="form-label-group">
-                            <input type="text" name="registrationLogin"
-                                   id="inputLogin" class="form-control"
-                                    <c:if test="${not empty login}">
-                                           value="${login}"
-                                    </c:if>
-                                   placeholder="login" required autofocus>
-                            <label for="inputLogin"><fmt:message key="registration.login"/></label>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
 
-                        <div class="form-label-group">
-                            <div class="text-center text-danger"><p><c:out value="${requestScope.wrongLogin}"/></p></div>
-                            <input type="text" name="registrationName"
+                    </c:if>
 
-                                   id="inputName" class="form-control"
-                                    <c:if test="${not empty name}">
-                                        value="${name}"
-                                    </c:if>
-                                   placeholder="login" required>
-                            <label for="inputName"><fmt:message key="registration.name" /></label>
-                        </div>
+                    <div class="form-label-group">
+                        <input type="text" name="registrationLogin"
+                               id="inputLogin" class="form-control"
+                                <c:if test="${not empty login}">
+                                       value="${login}"
+                                </c:if>
+                               placeholder="login" required autofocus>
+                        <label for="inputLogin"><fmt:message key="registration.login"/></label>
+                    </div>
 
-                        <div class="form-label-group">
-                            <input type="text" name="registrationSurname"
-                                   id="inputSurname" class="form-control"
-                                    <c:if test="${not empty surname}">
-                                           value="${surname}"
-                                    </c:if>
-                                   placeholder="login" required >
-                            <label for="inputSurname"><fmt:message key="registration.surname"/></label>
-                        </div>
+                    <div class="form-label-group">
+                        <div class="text-center text-danger"><p><c:out value="${requestScope.wrongLogin}"/></p></div>
+                        <input type="text" name="registrationName"
 
-                        <div class="form-label-group">
-                            <input type="text" name="registrationPhone"
-                                   id="inputPhone" class="form-control"
-                                    <c:if test="${not empty phone}">
-                                           value="${phone}"
-                                    </c:if>
-                                   placeholder="Password" required >
-                            <label for="inputPhone"><fmt:message key="registration.phone"/></label>
-                        </div>
-                        <div class="form-label-group">
-                            <input type="password" name="registrationPwd"
-                                   id="inputPassword" class="form-control" placeholder="Password" required>
-                            <label for="inputPassword"><fmt:message key="registration.password"/></label>
-                        </div>
+                               id="inputName" class="form-control"
+                                <c:if test="${not empty name}">
+                                    value="${name}"
+                                </c:if>
+                               placeholder="login" required>
+                        <label for="inputName"><fmt:message key="registration.name" /></label>
+                    </div>
 
-                        <button class="btn btn-success btn-block text-uppercase" type="submit" >
+                    <div class="form-label-group">
+                        <input type="text" name="registrationSurname"
+                               id="inputSurname" class="form-control"
+                                <c:if test="${not empty surname}">
+                                       value="${surname}"
+                                </c:if>
+                               placeholder="login" required >
+                        <label for="inputSurname"><fmt:message key="registration.surname"/></label>
+                    </div>
 
-                            <fmt:message key="registration.button.name"/>
-                        </button>
+                    <div class="form-label-group">
+                        <input type="text" name="registrationPhone"
+                               id="inputPhone" class="form-control"
+                                <c:if test="${not empty phone}">
+                                       value="${phone}"
+                                </c:if>
+                               placeholder="Password" required >
+                        <label for="inputPhone"><fmt:message key="registration.phone"/></label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" name="registrationPwd"
+                               id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword"><fmt:message key="registration.password"/></label>
+                    </div>
+
+                    <button class="btn btn-success btn-block text-uppercase" type="submit" >
+
+                        <fmt:message key="registration.button.name"/>
+                    </button>
 
 
 

@@ -2,6 +2,7 @@ package controller.command.impl.guest;
 
 import controller.command.Command;
 import model.entity.User;
+import model.entity.enums.Role;
 import model.service.autentification.RegisterService;
 import model.service.encryption.JBCrypt;
 import model.service.encryption.PasswordService;
@@ -28,6 +29,7 @@ public class RegistrationSubmitCommand implements Command {
 			return wrongInputInform(request);
 		} else {
 			user.setPwdHash(pwdService.createHash(user.getPwdHash()));
+			user.setRole(Role.USER);
 			service.createNewUser(user);
 			log.info("User was added to db, check it");
 			request.getSession().setAttribute("user", user);

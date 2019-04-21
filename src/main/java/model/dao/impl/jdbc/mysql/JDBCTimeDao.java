@@ -65,4 +65,34 @@ public class JDBCTimeDao implements TimeDao {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public int getPageCount(int timePerPage) {
+        try (PreparedStatement statement = connection.prepareStatement(SQLQueries.GET_TIME_COUNT)) {
+            ResultSet set = statement.executeQuery();
+            if (set.next()) {
+                return set.getInt(1) / timePerPage+1;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    @Override
+    public List<ChangeTime> getPage(int offset, int length) {
+        List<ChangeTime> time = new ArrayList<>();
+        try(PreparedStatement statement = connection.prepareStatement(SQLQueries.GET_TIME_IN_RANGE)) {
+            statement.setInt(1, offset);
+            statement.setInt(2, length);
+            ResultSet set = statement.executeQuery();
+            while (set.next()) {
+                time.add(new TimeMapper().extractFromResultSet(set));
+            }
+            return time;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
