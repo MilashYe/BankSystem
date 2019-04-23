@@ -1,4 +1,3 @@
-
 <%--
   Created by IntelliJ IDEA.
   User: yevhenii
@@ -9,8 +8,13 @@
 <html>
 <head>
     <title>Pay bills</title>
+
+    <link href="${pageContext.request.contextPath}/css/user.css" rel="stylesheet" type="text/css"/>
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+    <fmt:setLocale value="${sessionScope.lang}"/>
+    <fmt:setBundle basename="message"/>
 
 </head>
 <body>
@@ -21,20 +25,21 @@
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <c:out value="Pay bill"/>
+                            <fmt:message key="user.bill.title"/>
                         </h5>
                         <form class="form-signin" method="post" action="${pageContext.request.contextPath}/bank/user/payBill">
                             <table>
                                 <tr>
-                                    <th>from account</th>
-                                    <th>to account</th>
+                                    <th><fmt:message key="user.account.from"/> </th>
+                                    <th><fmt:message key="user.account.to"/> </th>
                                 </tr>
                                 <tr>
                                     <td>
                                         <label>
                                             <select name="account1">
                                                 <c:forEach var="account" items="${sessionScope.user.accounts}">
-                                                    <option value="${account.id}"><c:out value="account ${account.id}"/> </option>
+                                                    <option value="${account.id}"><fmt:message key="account"/>
+                                                        <c:out value="${account.id}"/> </option>
                                                 </c:forEach>
                                             </select>
                                         </label>
@@ -47,9 +52,9 @@
                                 </tr>
                             </table>
                             <p>
-                                <label>
-                                    <input name="money" type="number" required>
-                                </label>
+                                <label for="money"><fmt:message key="input.sum"/> </label>
+                                <input id="money" name="money" type="number" required>
+
                             </p>
                             <c:if test="${not empty requestScope.info}">
                                 <div class="alert alert-danger" role="alert">
@@ -62,7 +67,7 @@
                             </c:if>
 
 
-                            <button type="submit" class="btn btn-success text-uppercase">pay</button>
+                            <button type="submit" class="btn btn-success text-uppercase"><fmt:message key="button.pay"/> </button>
                         </form>
 
 

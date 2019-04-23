@@ -23,7 +23,7 @@ public class RegistrationSubmitCommand implements Command {
 		User user = fillUser(request);
 
 		if (!validation(request, user)) {
-			return "/registration.jsp";
+			return "redirect:/bank/registration";
 		}
 		if (service.isLoginExist(user.getLogin())) {
 			return wrongInputInform(request);
@@ -55,10 +55,10 @@ public class RegistrationSubmitCommand implements Command {
 		String phone = request.getParameter("registrationPhone");
 		String pwd = request.getParameter("registrationPwd");
 
-		request.setAttribute("login",login);
-		request.setAttribute("name", name);
-		request.setAttribute("surname", surname);
-		request.setAttribute("phone", phone);
+		request.getSession().setAttribute("login",login);
+		request.getSession().setAttribute("name", name);
+		request.getSession().setAttribute("surname", surname);
+		request.getSession().setAttribute("phone", phone);
 		User user = new User();
 
 		user.setLogin(login);
@@ -72,28 +72,27 @@ public class RegistrationSubmitCommand implements Command {
 
 	private boolean validation(HttpServletRequest request, User user) {
 		boolean submited = true;
-		Locale locale = request.getSession().getAttribute("lang") == null ?
-				new Locale("en") :
-				new Locale((String) request.getSession().getAttribute("lang"));
+		request.getSession().removeAttribute("alert");
+		Locale locale = new Locale((String) request.getSession().getAttribute("lang"));
 
 		if (!checkValid(user.getLogin(), ResourceBundle.getBundle("regex").getString("login.regex"))) {
-			request.setAttribute("wrongLogin", ResourceBundle.getBundle("errors", locale).getString("register.login"));
-			request.setAttribute("alert", true);
+			request.getSession().setAttribute("wrongLogin", ResourceBundle.getBundle("errors", locale).getString("register.login"));
+			request.getSession().setAttribute("alert", true);
 			submited = false;
 		}
 		log.info("registration user.login "+user.getLogin()+"  regex check :" + checkValid(user.getLogin(), ResourceBundle.getBundle("regex").getString("login.regex")));
 
 		if (!checkValid(user.getName(), ResourceBundle.getBundle("regex").getString("name.regex"))) {
-			request.setAttribute("wrongName", ResourceBundle.getBundle("errors", locale).getString("register.name"));
-			request.setAttribute("alert", true);
+			request.getSession().setAttribute("wrongName", ResourceBundle.getBundle("errors", locale).getString("register.name"));
+			request.getSession().setAttribute("alert", true);
 			submited = false;
 		}
 
 		log.info("registration user.name "+user.getName()+"  regex check :" + checkValid(user.getName(), ResourceBundle.getBundle("regex").getString("name.regex")));
 
 		if (!checkValid(user.getSurname(), ResourceBundle.getBundle("regex").getString("name.regex"))) {
-			request.setAttribute("wrongSurname", ResourceBundle.getBundle("errors", locale).getString("register.surname"));
-			request.setAttribute("alert",true);
+			request.getSession().setAttribute("wrongSurname", ResourceBundle.getBundle("errors", locale).getString("register.surname"));
+			request.getSession().setAttribute("alert",true);
 			submited = false;
 		}
 
@@ -101,15 +100,15 @@ public class RegistrationSubmitCommand implements Command {
 
 
 		if (!checkValid(user.getPhone(), ResourceBundle.getBundle("regex").getString("mobile.phone.regex"))) {
-			request.setAttribute("wrongPhone", ResourceBundle.getBundle("errors", locale).getString("register.phone"));
-			request.setAttribute("alert",true);
+			request.getSession().setAttribute("wrongPhone", ResourceBundle.getBundle("errors", locale).getString("register.phone"));
+			request.getSession().setAttribute("alert",true);
 			submited = false;
 		}
 
 		log.info("registration user.phone "+user.getPhone()+"  regex check :" + checkValid(user.getPhone(), ResourceBundle.getBundle("regex").getString("mobile.phone.regex")));
 
 		if (!checkValid(user.getPwdHash(), ResourceBundle.getBundle("regex").getString("pwd.regex"))) {
-			request.setAttribute("wrongPwd", ResourceBundle.getBundle("errors", locale).getString("register.pwd"));
+			request.getSession().setAttribute("wrongPwd", ResourceBundle.getBundle("errors", locale).getString("register.pwd"));
 
 			submited = false;
 		}
@@ -122,12 +121,12 @@ public class RegistrationSubmitCommand implements Command {
 
 	private String wrongInputInform(HttpServletRequest request) {
 		String lang = (String) request.getSession().getAttribute("lang");
-		String info = ResourceBundle.getBundle("errors", new Locale(lang == null? "en":lang)).getString("register.not.unique");
+		String info = ResourceBundle.getBundle("errors", new Locale(lang)).getString("register.not.unique");
 
-		request.setAttribute("info", info);
-		request.setAttribute("login", null);
+		request.getSession().setAttribute("info", info);
+		request.getSession().setAttribute("login", null);
 
-		log.info("info " + ResourceBundle.getBundle("errors", new Locale(lang == null? "en":lang)).getString("register.not.unique"));
-		return "/registration.jsp";
+		log.info("info " + ResourceBundle.getBundle("errors", new Locale(lang)).getString("register.not.unique"));
+		return "redirect:/bank/registration";
 	}
 }

@@ -7,10 +7,17 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static org.junit.Assert.assertEquals;
+
 public class TimeUtilTest {
     private ArrayList<ChangeTime> times = new ArrayList<>();
     @Before
     public void init() {
+
+
+    }
+    @Test
+    public void sortByAccountThenDate() {
         ChangeTime time1 = new ChangeTime();
         time1.setAcId(13);
         time1.setChangeTime(new Date());
@@ -27,11 +34,16 @@ public class TimeUtilTest {
         times.add(time2);
         times.add(time3);
 
-    }
-    @Test
-    public void sortByAccountThenDate() {
+        ArrayList<ChangeTime> expected = new ArrayList<>();
+        expected.add(time3);
+        expected.add(time3);
+        expected.add(time2);
+        expected.add(time2);
+        expected.add(time1);
+        expected.add(time1);
 
-        new TimeUtil().sortByAccountThenDate(times).forEach(System.out::println);
+        times = new TimeUtil().sortByAccountThenDate(times);
+        assertEquals(expected, times);
 
     }
 }

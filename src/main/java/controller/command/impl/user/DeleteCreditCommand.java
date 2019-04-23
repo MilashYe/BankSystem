@@ -13,7 +13,7 @@ public class DeleteCreditCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         proccess(request);
-        return "/WEB-INF/view/user/account.jsp";
+        return "redirect:/bank/user/accountInfo";
     }
 
     private void proccess(HttpServletRequest request) {
@@ -22,6 +22,7 @@ public class DeleteCreditCommand implements Command {
         new CreditUtil().setDisapprovedCreditById(creditId);
 
         request.setAttribute("account",new AccountUtil().readById(credit.getAccount()));
+        request.setAttribute("acId",""+credit.getAccount());
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
         request.getSession().setAttribute("user",user);

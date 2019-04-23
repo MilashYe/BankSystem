@@ -26,8 +26,8 @@
 <div class="container">
 
     <!-- Page Heading -->
-    <h1 class="my-4"><c:out value="Admin ${sessionScope.user.login}"/>
-        <small>main page</small>
+    <h1 class="my-4"><fmt:message key="admin.admin"/> <c:out value=" ${sessionScope.user.login}"/>
+        <small><fmt:message key="user.main.page"/> </small>
     </h1>
 
     <!-- Project One -->
@@ -38,9 +38,11 @@
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Connect user</h3>
-            <p>There you can sent money to other account</p>
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/addUsers">Connect user</a>
+            <h3><fmt:message key="admin.main.connect.user"/> </h3>
+            <p><fmt:message key="admin.main.connect.text"/> </p>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/addUsers"><fmt:message
+                    key="admin.main.connect.button"/>
+            </a>
         </div>
     </div>
     <!-- /.row -->
@@ -55,9 +57,10 @@
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Approve or reject credits</h3>
-            <p></p>
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/approveCreditPage">Credits</a>
+            <h3><fmt:message key="admin.main.approve"/> </h3>
+            <p><fmt:message key="admin.main.approve.text"/> </p>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/approveCreditPage"><fmt:message
+                    key="admin.main.approve.button"/> </a>
         </div>
     </div>
     <!-- /.row -->
@@ -72,9 +75,10 @@
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Show user info</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/statistic">Show change time</a>
+            <h3><fmt:message key="admin.main.info"/> </h3>
+            <p><fmt:message key="admin.main.info.text"/> </p>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/admin/statistic"><fmt:message
+                    key="admin.main.info.button"/> </a>
         </div>
     </div>
     <!-- /.row -->

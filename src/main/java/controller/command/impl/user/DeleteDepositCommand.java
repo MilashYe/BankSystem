@@ -14,7 +14,7 @@ public class DeleteDepositCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         proccess(request);
-        return "/WEB-INF/view/user/account.jsp";
+        return "redirect:/bank/user/accountInfo";
     }
 
     private void proccess(HttpServletRequest request) {
@@ -22,12 +22,9 @@ public class DeleteDepositCommand implements Command {
         Deposit deposit = new DepositUtil().readById(depositId);
         new DepositUtil().deleteDepositById(depositId);
         Account account = new AccountUtil().readById(deposit.getIdAcc());
-       /* account = new AccountUtil().getApprovedCredit(account);
-        account = new AccountUtil().getNotEmptyDeposits(account);
-*/
 
-        request.setAttribute("account", account);
-        request.setAttribute("acId", account.getId());
+        request.getSession().setAttribute("account", account);
+        request.getSession().setAttribute("acId", ""+account.getId());
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
         request.getSession().setAttribute("user", user);

@@ -12,6 +12,7 @@
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
     <fmt:setLocale value="${sessionScope.lang}"/>
     <fmt:setBundle basename="message" />
 
@@ -50,24 +51,7 @@
     </div>
 
     <nav aria-label="Page navigation">
-        <%--<ul class="pagination fixed-bottom">
-            <li class="page-item">
 
-            </li>
-            <c:forEach var="i" begin="${requestScope.page}" end="${requestScope.page+5}" step="1">
-                <li class="page-item">
-                    <a class="page-link" href="${pageContext.request.contextPath}/bank/admin/statistic?page=${i}&pageCount=${requestScope.pageCount}">
-                        <c:out value="${i+1}"/>
-                    </a>
-                </li>
-            </c:forEach>
-            <li class="page-item">
-                <a class="page-link" href="${pageContext.request.contextPath}/bank/admin/statistic?page=${sessionScope.page+1}&pageCount=${requestScope.pageCount}" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </li>
-        </ul>--%>
         <ul class="pagination justify-content-center">
             <c:if test="${requestScope.currentPage != 0}">
                 <li class="page-item">
@@ -98,7 +82,7 @@
             </c:forEach>
             <c:if test="${requestScope.currentPage lt requestScope.pageCount-1}">
                 <li class="page-item">
-                    <a class="page-link" style="width: 120px;"
+                    <a class="page-link"
                        href="${pageContext.request.contextPath}/bank/admin/statistic?page=${requestScope.currentPage+1}">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Next</span>

@@ -13,6 +13,11 @@ public class LoginPageCommand implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 		User user = (User) request.getSession().getAttribute("user");
+
+		request.setAttribute("info", request.getSession().getAttribute("exception"));
+		request.setAttribute("login",request.getSession().getAttribute("login"));
+		request.getSession().removeAttribute("exception");
+		request.getSession().removeAttribute("login");
 		log.info("user : " +  user);
 
 		return getRedirect(user);

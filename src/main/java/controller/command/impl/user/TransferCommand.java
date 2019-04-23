@@ -21,13 +21,13 @@ public class TransferCommand implements Command {
             new AccountUtil().transferBetweenAccounts(
                     Integer.parseInt(request.getParameter("account1")),
                     Integer.parseInt(request.getParameter("account2")),
-                    Integer.parseInt(request.getParameter("money")));
+                    (int) Long.parseLong(request.getParameter("money")));
         } catch (NotEnoughtMoneyException ex) {
-            request.setAttribute("info", "Not enought money");
-            return "/WEB-INF/view/user/bankTransfer.jsp";
+            request.getSession().setAttribute("exception", "Not enought money");
+            return "redirect:/bank/user/transferPage";
         } catch (WrongDestinationAccountException ex) {
-            request.setAttribute("info", ex.getMessage());
-            return "/WEB-INF/view/user/bankTransfer.jsp";
+            request.getSession().setAttribute("exception", ex.getMessage());
+            return "redirect:/bank/user/transferPage";
         }
         User user = (User) request.getSession().getAttribute("user") ;
         user = new UserUtil().updateUser(user);

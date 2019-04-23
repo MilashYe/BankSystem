@@ -17,7 +17,12 @@ public class LangFilter implements Filter {
 
 		Logger log = Logger.getLogger(this.getClass());
 		HttpServletRequest req = (HttpServletRequest) request;
-		String locale = Optional.ofNullable(request.getParameter("locale")).orElse("en");
+		Optional<String> optSession =
+				Optional.ofNullable((String) ((HttpServletRequest) request).getSession().getAttribute("lang"));
+		Optional<String> optReq = Optional.ofNullable(request.getParameter("locale"));
+		String locale = "en";
+		locale = optSession.orElse(locale);
+		locale = optReq.orElse(locale);
 
 		log.info("locale= " + locale);
 		req.getSession().setAttribute("lang",

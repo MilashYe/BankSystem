@@ -1,5 +1,7 @@
 package model.entity.enums;
 
+import java.util.Random;
+
 public enum  Deposits {
 
     STANDART("standart"),
@@ -12,7 +14,8 @@ public enum  Deposits {
     Deposits(String type) {
         switch (type) {
             case "standart":
-                percent = (int) (Math.random() * 100);
+                Random rnd = new Random(System.currentTimeMillis());
+                percent = (rnd.nextInt(6)+9);
                 break;
             case "private":
                 percent = 7;

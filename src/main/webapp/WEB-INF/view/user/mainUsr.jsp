@@ -26,20 +26,22 @@
 
     <!-- Page Heading -->
     <h1 class="my-4"><c:out value="${sessionScope.user.login}"/>
-        <small>main page</small>
+        <small><fmt:message key="user.main.page"/> </small>
     </h1>
 
     <!-- Project One -->
     <div class="row">
         <div class="col-md-7">
-            <a href="#">
+            <a href="${pageContext.request.contextPath}/bank/user/transferPage">
                 <img class="img-fluid rounded mb-3 mb-md-0" src="${pageContext.request.contextPath}/image/bankTransfer.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Bank tranfer</h3>
-            <p>There you can sent money to other account</p>
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/user/transferPage">Do transfer</a>
+            <h3><fmt:message key="user.bank.transfer"/> </h3>
+            <p><fmt:message key="user.bank.tansfer.text"/> </p>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/user/transferPage">
+                <fmt:message key="button.do.transfer"/>
+            </a>
         </div>
     </div>
     <!-- /.row -->
@@ -49,14 +51,17 @@
     <!-- Project Two -->
     <div class="row">
         <div class="col-md-7">
-            <a href="#">
+            <a href="${pageContext.request.contextPath}/bank/user/payBillPage">
                 <img class="img-fluid rounded mb-3 mb-md-0" src="${pageContext.request.contextPath}/image/payBills.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Pay bills</h3>
-            <p></p>
-            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/user/payBillPage">Pay bills</a>
+            <h3>
+                <fmt:message key="user.pay.bills"/></h3>
+            <p><fmt:message key="user.pay.bills.text"/> </p>
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/user/payBillPage"><fmt:message
+                    key="button.pay.bills"/>
+            </a>
         </div>
     </div>
     <!-- /.row -->
@@ -66,13 +71,13 @@
     <!-- Project Three -->
     <div class="row">
         <div class="col-md-7">
-            <a href="#">
+            <a href="${pageContext.request.contextPath}/bank/user/userInfo">
                 <img class="img-fluid rounded mb-3 mb-md-0" src="${pageContext.request.contextPath}/image/userInfo.jpg" alt="">
             </a>
         </div>
         <div class="col-md-5">
-            <h3>Show user info</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+            <h3><fmt:message key="user.show.user.info"/> </h3>
+            <p><fmt:message key="user.show.info.text"/> </p>
             <a class="btn btn-primary" href="${pageContext.request.contextPath}/bank/user/userInfo"><fmt:message key="user.main.info.button"/></a>
         </div>
     </div>

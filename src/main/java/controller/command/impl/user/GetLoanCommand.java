@@ -12,7 +12,7 @@ public class GetLoanCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         process(request);
-        return "/WEB-INF/view/user/success.jsp";
+        return "redirect:/bank/user/accountInfo";
     }
 
     private void process(HttpServletRequest request) {
@@ -27,5 +27,6 @@ public class GetLoanCommand implements Command {
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
         request.getSession().setAttribute("user",user);
+        request.getSession().setAttribute("acId",""+accountId);
     }
 }

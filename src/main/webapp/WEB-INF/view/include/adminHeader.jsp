@@ -37,17 +37,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/bank/admin/addUsers">
-                        <c:out value="Connect user"/>
+                        <fmt:message key="admin.nav.connect"/>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/bank/admin/statistic">
-                        <c:out value="Show statistic"/>
+                        <fmt:message key="admin.nav.stat"/>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/bank/admin/approveCreditPage">
-                        <c:out value="Approve credits"/>
+                        <fmt:message key="admin.nav.approve"/>
                     </a>
                 </li>
 

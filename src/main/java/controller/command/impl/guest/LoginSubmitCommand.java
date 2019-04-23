@@ -24,7 +24,7 @@ public class LoginSubmitCommand implements Command {
 		if (!service.isUserExist(login)) {
 			return userNotExist(request);
 		}
-		User user = service.createUSer(login);
+		User user = service.readUser(login);
 		log.info("User from DB in login page :" + user);
 
 		PasswordService pwdService = new JBCrypt();
@@ -35,12 +35,12 @@ public class LoginSubmitCommand implements Command {
 			return getRedirect(user);
 		}else {
 			String lang = (String) request.getSession().getAttribute("lang");
-			String info = ResourceBundle.getBundle("errors", new Locale(lang == null? "en":lang)).getString("register.pwd");
-
-			request.setAttribute("info", info);
-			request.setAttribute("login",login);
+			String info = ResourceBundle.getBundle("errors", new Locale(lang)).getString("register.pwd");
+			request.getSession().setAttribute("exception", info);
+			request.getSession().setAttribute("login",login);
+			request.getSession().setAttribute("wrongPass", "");
 			log.info("info wrong pwd "+info);
-			return "/login.jsp";
+			return "redirect:/bank/loginpage";
 		}
 
 	}
@@ -48,11 +48,11 @@ public class LoginSubmitCommand implements Command {
 	private String userNotExist(HttpServletRequest request) {
 
 		String lang = (String) request.getSession().getAttribute("lang");
-		String info = ResourceBundle.getBundle("errors", new Locale(lang == null? "en":lang)).getString("login.not.exist");
+		String info = ResourceBundle.getBundle("errors", new Locale(lang)).getString("login.not.exist");
 
-		request.setAttribute("info", info);
+		request.getSession().setAttribute("exception", info);
 		log.info("info user not exist "+info);
-		return "/login.jsp";
+		return "redirect:/bank/loginpage";
 	}
 
 	private String getRedirect(User user) {
@@ -68,7 +68,7 @@ public class LoginSubmitCommand implements Command {
 		} else if (Role.USER.getRole().equals(role.getRole())) {
 			return "redirect:/bank/user";
 		} else{
-			return "/login.jsp";
+			return "redirect:/bank/loginpage";
 		}
 
 	}

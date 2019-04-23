@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: yevhenii
@@ -9,7 +10,11 @@
 <html>
 <head>
     <title>Bank transfer</title>
+
+    <link href="${pageContext.request.contextPath}/css/user.css" rel="stylesheet" type="text/css"/>
     <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <fmt:setLocale value="${sessionScope.lang}"/>
+    <fmt:setBundle basename="message"/>
 
 </head>
 <body>
@@ -21,7 +26,7 @@
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <c:out value="Transfer"/>
+                            <fmt:message key="user.transfer.title"/>
                         </h5>
                         <form class="form-signin" name="transferForm" action="${pageContext.request.contextPath}/bank/user/doTransfer" method="post">
 
@@ -39,20 +44,23 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <label for="acc1"><c:out value="from account"/> </label>
+                                        <label for="acc1"><fmt:message key="user.account.from"/> </label>
                                         <select name="account1" id="acc1">
                                             <c:forEach var="account" items="${sessionScope.user.accounts}">
-                                                <option value="${account.id}"><c:out value="account ${account.id}"/> </option>
+                                                <option value="${account.id}">
+                                                    <fmt:message key="account"/> <c:out value="${account.id}"/> </option>
                                             </c:forEach>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="acc2"><c:out value="to account"/> </label>
+                                        <label for="acc2"><fmt:message key="user.account.to"/> </label>
                                         <select name="account2" id="acc2">
                                             <c:forEach var="account" items="${sessionScope.user.accounts}">
-                                                <option value="${account.id}"><c:out value="account ${account.id}"/> </option>
+                                                <option value="${account.id}">
+                                                    <fmt:message key="account"/> <c:out value="${account.id}"/>
+                                                </option>
                                             </c:forEach>
                                         </select>
 
@@ -61,7 +69,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="money">input sum</label>
+                                        <label for="money"><fmt:message key="input.sum"/> </label>
                                         <input id="money" name="money" type="number" required>
                                     </td>
 
@@ -69,7 +77,8 @@
 
 
                             </table>
-                            <button class="btn btn-success text-uppercase" type="submit">do transfer</button>
+                            <button class="btn btn-success text-uppercase" type="submit">
+                                <fmt:message key="button.transfer"/> </button>
                         </form>
 
 

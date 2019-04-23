@@ -1,3 +1,7 @@
 .form-group.form-group1{
     position: center;
 }
+body {
+    background: #020025;
+    background: linear-gradient(to top, #fffefe, #282828);
+}

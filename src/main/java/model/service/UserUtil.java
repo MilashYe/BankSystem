@@ -30,7 +30,12 @@ public class UserUtil {
 
     public User updateUser(User user) {
         try (UserDAO dao = DAOFactory.getInstance().createUserDAO()) {
-            return dao.readById(user.getId());
+            user = dao.readById(user.getId());
+            user.setAccounts(
+                    user.getAccounts().stream().
+                            filter(account -> account.getId() != 0).
+                            collect(Collectors.toList()));
+            return user;
         }
 
     }

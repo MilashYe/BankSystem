@@ -27,7 +27,7 @@
             <tr>
                 <td><c:out value="${credit.idCred}"/></td>
                     <td><c:out value="${credit.account}"/></td>
-                    <td><c:out value="${credit.money}"/> </td>
+                    <td><c:out value="${credit.money/100}"/> </td>
                     <td>
                         <c:if test="${credit.approved eq true and credit.rejected eq false}">
                             <c:out value="+"/>
@@ -51,7 +51,7 @@
                                   action="${pageContext.request.contextPath}/bank/admin/rejectCredit"
                                   method="post">
                                 <input type="hidden" name="idCredRej" value="${credit.idCred}" />
-                                <button type="submit" class="btn btn-success">reject</button>
+                                <button type="submit" class="btn btn-danger">reject</button>
                             </form>
                         </c:if>
                     </td>

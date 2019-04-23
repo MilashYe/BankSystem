@@ -12,7 +12,7 @@ public class GetDepositCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         proccess(request);
-        return "/WEB-INF/view/user/success.jsp";
+        return "redirect:/bank/user/accountInfo";
     }
 
     private void proccess(HttpServletRequest request) {
@@ -26,5 +26,6 @@ public class GetDepositCommand implements Command {
 
         User user = new UserUtil().updateUser((User)request.getSession().getAttribute("user"));
         request.getSession().setAttribute("user",user);
+        request.getSession().setAttribute("acId",""+accountId);
     }
 }

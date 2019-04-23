@@ -84,7 +84,7 @@ public class AccountUtil {
         }
     }
 
-    public void transferBetweenAccounts(int id1, int id2, int money) throws NotEnoughtMoneyException {
+    public void transferBetweenAccounts(int id1, int id2, long money) throws NotEnoughtMoneyException {
         try (AccountDAO dao = DAOFactory.getInstance().createAccountDAO()) {
             Account account1 = dao.readById(id1);
             Account account2;
@@ -100,8 +100,8 @@ public class AccountUtil {
                     account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
                     account2.setMoney(account2.getMoney() + new MoneyUtil().convertDown(money));
                     dao.startTransaction();
-                    dao.addTime(id1, "Money("+money+"₴) were sent to " + account2.getId() + " account");
-                    dao.addTime(id2, "Money("+money+"₴) were get from " + account1.getId() + " account");
+                    dao.addTime(id1, "Money("+money+") were sent to " + account2.getId() + " account");
+                    dao.addTime(id2, "Money("+money+") were get from " + account1.getId() + " account");
                     dao.update(account1);
                     dao.update(account2);
                     dao.endTransaction();
@@ -123,7 +123,7 @@ public class AccountUtil {
                 account1.setMoney(account1.getMoney() - new MoneyUtil().convertDown(money));
                 try {
                     dao.startTransaction();
-                    dao.addTime(id, "Money("+money+"₴) were sent to " + billNumber + " bill");
+                    dao.addTime(id, "Money("+money+") were sent to " + billNumber + " bill");
                     dao.update(account1);
                     dao.endTransaction();
                 } catch (AccountNotUpdateException e) {

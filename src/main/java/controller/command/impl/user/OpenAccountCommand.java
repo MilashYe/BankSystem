@@ -14,7 +14,7 @@ public class OpenAccountCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         process(request);
-        return "/WEB-INF/view/user/account.jsp";
+        return "redirect:/bank/user/userInfo";
     }
 
     private void process(HttpServletRequest request) {

@@ -37,13 +37,13 @@
                     <form class="form-signin" method="post" action="${pageContext.request.contextPath}/bank/register">
 
 
-                    <c:if test="${not empty info || alert}">
+                    <c:if test="${not empty requestScope.info || requestScope.alert}">
                         <div class="alert alert-danger" role="alert">
-                            <c:out value="${info}"/>
-                            <c:out value="${wrongName}"/>
-                            <c:out value="${wrongSurname}"/>
-                            <c:out value="${wrongPhone}"/>
-
+                            <p><c:out value="${info}"/></p>
+                            <p><c:out value="${wrongLogin}"/></p>
+                            <p><c:out value="${wrongName}"/></p>
+                            <p><c:out value="${wrongSurname}"/></p>
+                            <p><c:out value="${wrongPhone}"/></p>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -57,12 +57,12 @@
                                 <c:if test="${not empty login}">
                                        value="${login}"
                                 </c:if>
-                               placeholder="login" required autofocus>
+                               placeholder="login" required >
                         <label for="inputLogin"><fmt:message key="registration.login"/></label>
                     </div>
 
                     <div class="form-label-group">
-                        <div class="text-center text-danger"><p><c:out value="${requestScope.wrongLogin}"/></p></div>
+                        <div class="text-center text-danger"></div>
                         <input type="text" name="registrationName"
 
                                id="inputName" class="form-control"

@@ -24,7 +24,7 @@ public class LoginService {
         }
     }
 
-    public User createUSer(String login) {
+    public User readUser(String login) {
         return dao.readByLogin(login);
     }
 }

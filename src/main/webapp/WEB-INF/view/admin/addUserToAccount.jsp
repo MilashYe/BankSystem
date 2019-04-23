@@ -29,10 +29,10 @@
                     <div class="card-body">
                         <form action="${pageContext.request.contextPath}/bank/admin/connectUser" method="get">
                             <h5 class="card-title text-center">
-                                <fmt:message key="main.login"/>
+                                <fmt:message key="admin.add.main"/>
                             </h5>
                             <div class="form-group">
-                                <label for="selectUser">select user</label>
+                                <label for="selectUser"><fmt:message key="admin.add.select.user"/> </label>
                                 <select multiple class="form-control" id="selectUser" name="selectUser">
                                     <c:forEach var="u" items="${requestScope.users}">
                                         <option value="${u.id}">
@@ -42,7 +42,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="selectAccount">select account</label>
+                                <label for="selectAccount"><fmt:message key="admin.add.select.account"/> </label>
                                 <select multiple class="form-control" id="selectAccount" name="selectAccount">
                                     <c:forEach var="a" items="${requestScope.accounts}">
                                         <option value="${a.id}">
@@ -67,7 +67,8 @@
                                     </button>
                                 </div>
                             </c:if>
-                            <button class="btn-ex btn-lg btn-success btn-block text-uppercase " type="submit" >Connect</button>
+                            <button class="btn-ex btn-lg btn-success btn-block text-uppercase " type="submit" >
+                                <fmt:message key="button.connect"/> </button>
                         </form>
                     </div>
                 </div>

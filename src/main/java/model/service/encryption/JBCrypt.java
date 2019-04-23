@@ -16,7 +16,6 @@ public class JBCrypt implements PasswordService {
 		if(pwd==null||dbHash==null) {
 			return false;
 		}else {
-
 			return BCrypt.checkpw(pwd, dbHash);
 		}
 	}

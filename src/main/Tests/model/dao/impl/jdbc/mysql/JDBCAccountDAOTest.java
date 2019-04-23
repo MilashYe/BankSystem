@@ -28,7 +28,6 @@ public class JDBCAccountDAOTest {
     public void createAndReadById() {
         dao.create(testAccount);
         Account readAcc = dao.readById(testAccount.getId());
-        dao.addAccountToUser(testAccount.getId(),1);
         dao.delete(testAccount);
         System.out.println( dao.readById(2));
         assertEquals(testAccount.getId(), readAcc.getId());

@@ -11,7 +11,6 @@ public class StatisticPageCommand implements Command {
     public String execute(HttpServletRequest request) {
         Optional<String> optionalPage = Optional.ofNullable(request.getParameter("page"));
         int pageCount = new TimeUtil().getPageCount();
-        System.out.println(pageCount);
         int page = Integer.parseInt(optionalPage.orElse("0"));
         request.setAttribute("times",new TimeUtil().getTimeInRange(page));
         request.setAttribute("currentPage", page);

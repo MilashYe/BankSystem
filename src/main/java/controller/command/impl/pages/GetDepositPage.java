@@ -4,6 +4,7 @@ import controller.command.Command;
 import controller.command.impl.LogoutCommand;
 import model.entity.User;
 import model.entity.enums.Role;
+import model.service.UserUtil;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -22,6 +23,7 @@ public class GetDepositPage implements Command {
             role = Role.GUEST;
         }else{
             role = Role.valueOf(user.getRole().toUpperCase());
+            request.getSession().setAttribute("user",new UserUtil().readUserById(user.getId()));
         }
 
         if (Role.ADMIN.getRole().equals(role.getRole())) {
