@@ -2381,3 +2381,85 @@
 2019-04-23 13:18:50 INFO  Servlet:86 - path:registration
 2019-04-23 13:18:50 INFO  RegistrationPageCommand:18 - user null
 2019-04-23 13:18:50 INFO  Servlet:96 - forward: /registration.jsp
+2019-04-24 17:44:04 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:06 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:06 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:06 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:06 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:11 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:23 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:23 INFO  Servlet:86 - path:asdasd
+2019-04-24 17:44:23 INFO  Servlet:96 - forward: /index.jsp
+2019-04-24 17:44:23 INFO  LangFilter:27 - locale= en
+2019-04-24 17:44:23 INFO  LangFilter:27 - locale= en
+2019-04-24 17:55:22 INFO  LangFilter:27 - locale= en
+2019-04-24 18:00:52 INFO  LangFilter:27 - locale= en
+2019-04-24 18:00:53 INFO  LangFilter:27 - locale= en
+2019-04-24 18:04:24 INFO  LangFilter:27 - locale= en
+2019-04-24 18:04:44 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:00 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:01 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:01 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:10 INFO  LangFilter:27 - locale= en
+2019-04-24 18:05:10 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:11 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:12 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:12 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:12 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:12 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:18 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:18 INFO  Servlet:86 - path:loginpage
+2019-04-24 18:06:18 INFO  LoginPageCommand:21 - user : null
+2019-04-24 18:06:18 INFO  Servlet:96 - forward: /login.jsp
+2019-04-24 18:06:18 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:18 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:21 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:21 INFO  Servlet:86 - path:logiaswd
+2019-04-24 18:06:21 INFO  Servlet:96 - forward: /index.jsp
+2019-04-24 18:06:25 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:26 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:26 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:26 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:26 INFO  LangFilter:27 - locale= en
+2019-04-24 18:06:26 INFO  LangFilter:27 - locale= en
+2019-04-24 18:07:54 INFO  LangFilter:27 - locale= en
+2019-04-24 18:07:54 INFO  LangFilter:27 - locale= en
+2019-04-24 18:07:54 INFO  LangFilter:27 - locale= en
+2019-04-24 18:07:54 INFO  LangFilter:27 - locale= en
+2019-04-24 18:07:54 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:01 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:01 INFO  Servlet:86 - path:loginpage
+2019-04-24 18:10:01 INFO  LoginPageCommand:21 - user : null
+2019-04-24 18:10:02 INFO  Servlet:96 - forward: /login.jsp
+2019-04-24 18:10:02 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:02 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:09 INFO  Servlet:86 - path:login
+2019-04-24 18:10:09 INFO  JDBCUserDAO:105 - User was created null
+2019-04-24 18:10:09 INFO  LoginSubmitCommand:54 - info user not exist Sorry this login not exist
+2019-04-24 18:10:09 INFO  Servlet:93 - redirect: redirect:/bank/loginpage
+2019-04-24 18:10:09 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:09 INFO  Servlet:86 - path:loginpage
+2019-04-24 18:10:09 INFO  LoginPageCommand:21 - user : null
+2019-04-24 18:10:09 INFO  Servlet:96 - forward: /login.jsp
+2019-04-24 18:10:21 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:21 INFO  Servlet:86 - path:login
+2019-04-24 18:10:21 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=151900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=823290, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=39510, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=77, money=100000, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=78, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=100, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=101, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-24 18:10:21 INFO  JDBCUserDAO:105 - User was created User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=151900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=823290, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=39510, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=77, money=100000, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=78, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=100, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=101, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-24 18:10:21 INFO  LoginSubmitCommand:28 - User from DB in login page :User{login='user1', role=USER, pwdHash='$2a$04$qz.QTlPE8cpFBUNi2pC3peiunDki/YDMJbbyggt231b/ssJsswcZi', name='Genya', surname='Totoro', phone='+380466616364', accounts=[Account{id=1, money=151900, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=69, money=823290, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=71, money=39510, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=77, money=100000, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=78, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=100, money=0, closed=false, changeTime=[], users=[], credits=[], deposits=[]}, Account{id=101, money=0, closed=true, changeTime=[], users=[], credits=[], deposits=[]}]}
+2019-04-24 18:10:21 INFO  LoginSubmitCommand:32 - Login check: false
+2019-04-24 18:10:21 INFO  LoginSubmitCommand:42 - info wrong pwd Wrong password
+2019-04-24 18:10:21 INFO  Servlet:93 - redirect: redirect:/bank/loginpage
+2019-04-24 18:10:21 INFO  LangFilter:27 - locale= en
+2019-04-24 18:10:21 INFO  Servlet:86 - path:loginpage
+2019-04-24 18:10:21 INFO  LoginPageCommand:21 - user : null
+2019-04-24 18:10:21 INFO  Servlet:96 - forward: /login.jsp
